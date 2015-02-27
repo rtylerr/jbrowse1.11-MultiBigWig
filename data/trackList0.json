@@ -1,0 +1,66 @@
+{
+   "tracks" : [
+      {
+         "chunkSize" : 20000,
+         "urlTemplate" : "seq/{refseq_dirpath}/{refseq}-",
+         "type" : "SequenceTrack",
+         "label" : "DNA",
+         "key" : "DNA"
+      },
+
+      {
+         "style" : {
+            "className" : "feature"
+         },
+         "key" : "CDS",
+         "urlTemplate" : "tracks/CDS/{refseq}/trackData.json",
+         "phase" : null,
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "label" : "CDS",
+         "subfeatures" : null
+      },
+	  {
+         "style" : {
+            "className" : "feature"
+         },
+         "key" : "ncRNA",
+         "urlTemplate" : "tracks/ncRNA/{refseq}/trackData.json",
+         "phase" : null,
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "label" : "ncRNA",
+         "subfeatures" : null
+      },
+///////////////////////////////////////////////////////////////////////////////////
+
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 //"autoscale": "local",
+		 "variance_band": true,
+		 "urlTemplate" : [
+{"file": "raw/3-f.bw", "colour": "blue"},
+{"file": "raw/14-f.bw", "colour": "red"},
+{"file": "raw/9-f.bw", "colour": "green"},
+{"file": "raw/15-f.bw", "colour": "purple"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 0 vs 15_ml/hr 1 - (+)",
+		 "key" : "15_ml/hr 0 vs 15_ml/hr 1 - (+)",
+		"style": {"height": 300},
+		"show_peaks": {
+			"cutoff": 16, 
+			"highlight_colour": "yellow", 
+			colour: "purple"
+		}
+	},
+	
+///////////////////////////////////////////////////////////////////////////////////
+	 
+   ],
+   "names" : {
+      "url" : "names/",
+      "type" : "Hash"
+   },
+   "formatVersion" : 1
+}

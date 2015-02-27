@@ -1,0 +1,848 @@
+{
+   "tracks" : [
+      {
+         "chunkSize" : 20000,
+         "urlTemplate" : "seq/{refseq_dirpath}/{refseq}-",
+         "type" : "SequenceTrack",
+         "label" : "DNA",
+         "key" : "DNA",
+		 "category" : "Misc"
+      },
+
+      {
+         "style" : {
+            "className" : "feature"
+         },
+         "key" : "CDS",
+         "urlTemplate" : "tracks/CDS/{refseq}/trackData.json",
+         "phase" : null,
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "label" : "CDS",
+         "subfeatures" : null,
+		 "category" : "Misc"
+      },
+	  {
+         "style" : {
+            "className" : "feature"
+         },
+         "key" : "ncRNA",
+         "urlTemplate" : "tracks/ncRNA/{refseq}/trackData.json",
+         "phase" : null,
+         "compress" : 0,
+         "type" : "FeatureTrack",
+         "label" : "ncRNA",
+         "subfeatures" : null,
+		 "category" : "Misc"
+      },
+///////////////////////////////////////////////////////////////////////////////////
+
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/3-f.bw", "colour": "blue"},
+{"file": "raw/14-f.bw", "colour": "red"},
+{"file": "raw/9-f.bw", "colour": "green"},
+{"file": "raw/15-f.bw", "colour": "purple"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 0 vs 15_ml/hr 1 - (+)",
+		 "key" : "15_ml/hr 0 vs 15_ml/hr 1 - (+)",
+		 "variance_band": true,
+		"style": {"height": 200},
+		"category" : "15_ml-hr 0 vs 15_ml-hr 1"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/15_ml_hr_0_vs_15_ml_hr_1-limma_logFC-av-f.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 0 vs 15_ml/hr 1 - LIMMA logFC averaged over genes (+), sig < 0.1",
+		 "key" : "15_ml/hr 0 vs 15_ml/hr 1 - LIMMA logFC averaged over genes (+), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "15_ml-hr 0 vs 15_ml-hr 1"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/15_ml_hr_0_vs_15_ml_hr_1-limma_logFC-unav-f.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 0 vs 15_ml/hr 1 - LIMMA logFC  (+), sig < 0.1",
+		 "key" : "15_ml/hr 0 vs 15_ml/hr 1 - LIMMA logFC  (+), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "15_ml-hr 0 vs 15_ml-hr 1"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/3-f.bw", "colour": "blue"},
+{"file": "raw/14-f.bw", "colour": "red"},
+{"file": "raw/10-f.bw", "colour": "green"},
+{"file": "raw/16-f.bw", "colour": "purple"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 0 vs 15_ml/hr 2 - (+)",
+		 "key" : "15_ml/hr 0 vs 15_ml/hr 2 - (+)",
+		 "variance_band": true,
+		"style": {"height": 300},
+		"show_peaks": {
+			"cutoff_up": 17, 
+			//"cutoff_down": 8,
+			"highlight_colour": "yellow", 
+			colour: "red"
+		},
+		"category" : "15_ml-hr 0 vs 15_ml-hr 2"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/15_ml_hr_0_vs_15_ml_hr_2-limma_logFC-av-f.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 0 vs 15_ml/hr 2 - LIMMA logFC averaged over genes (+), sig < 0.1",
+		 "key" : "15_ml/hr 0 vs 15_ml/hr 2 - LIMMA logFC averaged over genes (+), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "15_ml-hr 0 vs 15_ml-hr 2"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/15_ml_hr_0_vs_15_ml_hr_2-limma_logFC-unav-f.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 0 vs 15_ml/hr 2 - LIMMA logFC  (+), sig < 0.1",
+		 "key" : "15_ml/hr 0 vs 15_ml/hr 2 - LIMMA logFC  (+), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "15_ml-hr 0 vs 15_ml-hr 2"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/9-f.bw", "colour": "blue"},
+{"file": "raw/15-f.bw", "colour": "red"},
+{"file": "raw/10-f.bw", "colour": "green"},
+{"file": "raw/16-f.bw", "colour": "purple"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 1 vs 15_ml/hr 2 - (+)",
+		 "key" : "15_ml/hr 1 vs 15_ml/hr 2 - (+)",
+		 "variance_band": true,
+		"style": {"height": 200},
+		"category" : "15_ml-hr 1 vs 15_ml-hr 2"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/15_ml_hr_1_vs_15_ml_hr_2-limma_logFC-av-f.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 1 vs 15_ml/hr 2 - LIMMA logFC averaged over genes (+), sig < 0.1",
+		 "key" : "15_ml/hr 1 vs 15_ml/hr 2 - LIMMA logFC averaged over genes (+), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "15_ml-hr 1 vs 15_ml-hr 2"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/15_ml_hr_1_vs_15_ml_hr_2-limma_logFC-unav-f.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 1 vs 15_ml/hr 2 - LIMMA logFC  (+), sig < 0.1",
+		 "key" : "15_ml/hr 1 vs 15_ml/hr 2 - LIMMA logFC  (+), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "15_ml-hr 1 vs 15_ml-hr 2"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/1-f.bw", "colour": "blue"},
+{"file": "raw/2-f.bw", "colour": "red"},
+{"file": "raw/5-f.bw", "colour": "green"},
+{"file": "raw/7-f.bw", "colour": "purple"},
+{"file": "raw/11-f.bw", "colour": "yellow"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 5_ml/hr 0 vs 5_ml/hr 1 - (+)",
+		 "key" : "5_ml/hr 0 vs 5_ml/hr 1 - (+)",
+		 "variance_band": true,
+		"style": {"height": 200},
+		"category" : "5_ml-hr 0 vs 5_ml-hr 1"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/5_ml_hr_0_vs_5_ml_hr_1-limma_logFC-av-f.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 5_ml/hr 0 vs 5_ml/hr 1 - LIMMA logFC averaged over genes (+), sig < 0.1",
+		 "key" : "5_ml/hr 0 vs 5_ml/hr 1 - LIMMA logFC averaged over genes (+), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "5_ml-hr 0 vs 5_ml-hr 1"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/5_ml_hr_0_vs_5_ml_hr_1-limma_logFC-unav-f.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 5_ml/hr 0 vs 5_ml/hr 1 - LIMMA logFC  (+), sig < 0.1",
+		 "key" : "5_ml/hr 0 vs 5_ml/hr 1 - LIMMA logFC  (+), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "5_ml-hr 0 vs 5_ml-hr 1"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/1-f.bw", "colour": "blue"},
+{"file": "raw/2-f.bw", "colour": "red"},
+{"file": "raw/5-f.bw", "colour": "green"},
+{"file": "raw/12-f.bw", "colour": "purple"},
+{"file": "raw/17-f.bw", "colour": "yellow"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 5_ml/hr 0 vs 5_ml/hr 2 - (+)",
+		 "key" : "5_ml/hr 0 vs 5_ml/hr 2 - (+)",
+		 "variance_band": true,
+		"style": {"height": 200},
+		"category" : "5_ml-hr 0 vs 5_ml-hr 2"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/5_ml_hr_0_vs_5_ml_hr_2-limma_logFC-av-f.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 5_ml/hr 0 vs 5_ml/hr 2 - LIMMA logFC averaged over genes (+), sig < 0.1",
+		 "key" : "5_ml/hr 0 vs 5_ml/hr 2 - LIMMA logFC averaged over genes (+), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "5_ml-hr 0 vs 5_ml-hr 2"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/5_ml_hr_0_vs_5_ml_hr_2-limma_logFC-unav-f.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 5_ml/hr 0 vs 5_ml/hr 2 - LIMMA logFC  (+), sig < 0.1",
+		 "key" : "5_ml/hr 0 vs 5_ml/hr 2 - LIMMA logFC  (+), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "5_ml-hr 0 vs 5_ml-hr 2"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/7-f.bw", "colour": "blue"},
+{"file": "raw/11-f.bw", "colour": "red"},
+{"file": "raw/12-f.bw", "colour": "green"},
+{"file": "raw/17-f.bw", "colour": "purple"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 5_ml/hr 1 vs 5_ml/hr 2 - (+)",
+		 "key" : "5_ml/hr 1 vs 5_ml/hr 2 - (+)",
+		 "variance_band": true,
+		"style": {"height": 200},
+		"category" : "5_ml-hr 1 vs 5_ml-hr 2"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/5_ml_hr_1_vs_5_ml_hr_2-limma_logFC-av-f.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 5_ml/hr 1 vs 5_ml/hr 2 - LIMMA logFC averaged over genes (+), sig < 0.1",
+		 "key" : "5_ml/hr 1 vs 5_ml/hr 2 - LIMMA logFC averaged over genes (+), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "5_ml-hr 1 vs 5_ml-hr 2"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/5_ml_hr_1_vs_5_ml_hr_2-limma_logFC-unav-f.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 5_ml/hr 1 vs 5_ml/hr 2 - LIMMA logFC  (+), sig < 0.1",
+		 "key" : "5_ml/hr 1 vs 5_ml/hr 2 - LIMMA logFC  (+), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "5_ml-hr 1 vs 5_ml-hr 2"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/3-f.bw", "colour": "blue"},
+{"file": "raw/14-f.bw", "colour": "red"},
+{"file": "raw/1-f.bw", "colour": "green"},
+{"file": "raw/2-f.bw", "colour": "purple"},
+{"file": "raw/5-f.bw", "colour": "yellow"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 0 vs 5_ml/hr 0 - (+)",
+		 "key" : "15_ml/hr 0 vs 5_ml/hr 0 - (+)",
+		 "variance_band": true,
+		"style": {"height": 200},
+		"category" : "15_ml-hr 0 vs 5_ml-hr 0"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/15_ml_hr_0_vs_5_ml_hr_0-limma_logFC-av-f.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 0 vs 5_ml/hr 0 - LIMMA logFC averaged over genes (+), sig < 0.1",
+		 "key" : "15_ml/hr 0 vs 5_ml/hr 0 - LIMMA logFC averaged over genes (+), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "15_ml-hr 0 vs 5_ml-hr 0"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/15_ml_hr_0_vs_5_ml_hr_0-limma_logFC-unav-f.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 0 vs 5_ml/hr 0 - LIMMA logFC  (+), sig < 0.1",
+		 "key" : "15_ml/hr 0 vs 5_ml/hr 0 - LIMMA logFC  (+), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "15_ml-hr 0 vs 5_ml-hr 0"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/9-f.bw", "colour": "blue"},
+{"file": "raw/15-f.bw", "colour": "red"},
+{"file": "raw/7-f.bw", "colour": "green"},
+{"file": "raw/11-f.bw", "colour": "purple"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 1 vs 5_ml/hr 1 - (+)",
+		 "key" : "15_ml/hr 1 vs 5_ml/hr 1 - (+)",
+		 "variance_band": true,
+		"style": {"height": 200},
+		"category" : "15_ml-hr 1 vs 5_ml-hr 1"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/15_ml_hr_1_vs_5_ml_hr_1-limma_logFC-av-f.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 1 vs 5_ml/hr 1 - LIMMA logFC averaged over genes (+), sig < 0.1",
+		 "key" : "15_ml/hr 1 vs 5_ml/hr 1 - LIMMA logFC averaged over genes (+), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "15_ml-hr 1 vs 5_ml-hr 1"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/15_ml_hr_1_vs_5_ml_hr_1-limma_logFC-unav-f.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 1 vs 5_ml/hr 1 - LIMMA logFC  (+), sig < 0.1",
+		 "key" : "15_ml/hr 1 vs 5_ml/hr 1 - LIMMA logFC  (+), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "15_ml-hr 1 vs 5_ml-hr 1"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/10-f.bw", "colour": "blue"},
+{"file": "raw/16-f.bw", "colour": "red"},
+{"file": "raw/12-f.bw", "colour": "green"},
+{"file": "raw/17-f.bw", "colour": "purple"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 2 vs 5_ml/hr 2 - (+)",
+		 "key" : "15_ml/hr 2 vs 5_ml/hr 2 - (+)",
+		 "variance_band": true,
+		"style": {"height": 200},
+		"category" : "15_ml-hr 2 vs 5_ml-hr 2"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/15_ml_hr_2_vs_5_ml_hr_2-limma_logFC-av-f.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 2 vs 5_ml/hr 2 - LIMMA logFC averaged over genes (+), sig < 0.1",
+		 "key" : "15_ml/hr 2 vs 5_ml/hr 2 - LIMMA logFC averaged over genes (+), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "15_ml-hr 2 vs 5_ml-hr 2"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/15_ml_hr_2_vs_5_ml_hr_2-limma_logFC-unav-f.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 2 vs 5_ml/hr 2 - LIMMA logFC  (+), sig < 0.1",
+		 "key" : "15_ml/hr 2 vs 5_ml/hr 2 - LIMMA logFC  (+), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "15_ml-hr 2 vs 5_ml-hr 2"
+	},
+	
+
+	
+	
+	
+	
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/3-r.bw", "colour": "blue"},
+{"file": "raw/14-r.bw", "colour": "red"},
+{"file": "raw/9-r.bw", "colour": "green"},
+{"file": "raw/15-r.bw", "colour": "purple"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 0 vs 15_ml/hr 1 - (-)",
+		 "key" : "15_ml/hr 0 vs 15_ml/hr 1 - (-)",
+		 "variance_band": true,
+		"style": {"height": 200},
+		"category" : "15_ml-hr 0 vs 15_ml-hr 1"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/15_ml_hr_0_vs_15_ml_hr_1-limma_logFC-av-r.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 0 vs 15_ml/hr 1 - LIMMA logFC averaged over genes (-), sig < 0.1",
+		 "key" : "15_ml/hr 0 vs 15_ml/hr 1 - LIMMA logFC averaged over genes (-), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "15_ml-hr 0 vs 15_ml-hr 1"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/15_ml_hr_0_vs_15_ml_hr_1-limma_logFC-unav-r.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 0 vs 15_ml/hr 1 - LIMMA logFC  (-), sig < 0.1",
+		 "key" : "15_ml/hr 0 vs 15_ml/hr 1 - LIMMA logFC  (-), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "15_ml-hr 0 vs 15_ml-hr 1"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/3-r.bw", "colour": "blue"},
+{"file": "raw/14-r.bw", "colour": "red"},
+{"file": "raw/10-r.bw", "colour": "green"},
+{"file": "raw/16-r.bw", "colour": "purple"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 0 vs 15_ml/hr 2 - (-)",
+		 "key" : "15_ml/hr 0 vs 15_ml/hr 2 - (-)",
+		 "variance_band": true,
+		"style": {"height": 200},
+		"show_peaks": {
+			"cutoff": 17, 
+			"highlight_colour": "yellow", 
+			colour: "red"
+		},
+		"category" : "15_ml-hr 0 vs 15_ml-hr 2"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/15_ml_hr_0_vs_15_ml_hr_2-limma_logFC-av-r.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 0 vs 15_ml/hr 2 - LIMMA logFC averaged over genes (-), sig < 0.1",
+		 "key" : "15_ml/hr 0 vs 15_ml/hr 2 - LIMMA logFC averaged over genes (-), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "15_ml-hr 0 vs 15_ml-hr 2"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/15_ml_hr_0_vs_15_ml_hr_2-limma_logFC-unav-r.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 0 vs 15_ml/hr 2 - LIMMA logFC  (-), sig < 0.1",
+		 "key" : "15_ml/hr 0 vs 15_ml/hr 2 - LIMMA logFC  (-), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "15_ml-hr 0 vs 15_ml-hr 2"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/9-r.bw", "colour": "blue"},
+{"file": "raw/15-r.bw", "colour": "red"},
+{"file": "raw/10-r.bw", "colour": "green"},
+{"file": "raw/16-r.bw", "colour": "purple"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 1 vs 15_ml/hr 2 - (-)",
+		 "key" : "15_ml/hr 1 vs 15_ml/hr 2 - (-)",
+		 "variance_band": true,
+		"style": {"height": 200},
+		"category" : "15_ml-hr 1 vs 15_ml-hr 2"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/15_ml_hr_1_vs_15_ml_hr_2-limma_logFC-av-r.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 1 vs 15_ml/hr 2 - LIMMA logFC averaged over genes (-), sig < 0.1",
+		 "key" : "15_ml/hr 1 vs 15_ml/hr 2 - LIMMA logFC averaged over genes (-), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "15_ml-hr 1 vs 15_ml-hr 2"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/15_ml_hr_1_vs_15_ml_hr_2-limma_logFC-unav-r.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 1 vs 15_ml/hr 2 - LIMMA logFC  (-), sig < 0.1",
+		 "key" : "15_ml/hr 1 vs 15_ml/hr 2 - LIMMA logFC  (-), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "15_ml-hr 1 vs 15_ml-hr 2"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/1-r.bw", "colour": "blue"},
+{"file": "raw/2-r.bw", "colour": "red"},
+{"file": "raw/5-r.bw", "colour": "green"},
+{"file": "raw/7-r.bw", "colour": "purple"},
+{"file": "raw/11-r.bw", "colour": "yellow"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 5_ml/hr 0 vs 5_ml/hr 1 - (-)",
+		 "key" : "5_ml/hr 0 vs 5_ml/hr 1 - (-)",
+		 "variance_band": true,
+		"style": {"height": 200},
+		"category" : "5_ml-hr 0 vs 5_ml-hr 1"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/5_ml_hr_0_vs_5_ml_hr_1-limma_logFC-av-r.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 5_ml/hr 0 vs 5_ml/hr 1 - LIMMA logFC averaged over genes (-), sig < 0.1",
+		 "key" : "5_ml/hr 0 vs 5_ml/hr 1 - LIMMA logFC averaged over genes (-), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "5_ml-hr 0 vs 5_ml-hr 1"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/5_ml_hr_0_vs_5_ml_hr_1-limma_logFC-unav-r.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 5_ml/hr 0 vs 5_ml/hr 1 - LIMMA logFC  (-), sig < 0.1",
+		 "key" : "5_ml/hr 0 vs 5_ml/hr 1 - LIMMA logFC  (-), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "5_ml-hr 0 vs 5_ml-hr 1"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/1-r.bw", "colour": "blue"},
+{"file": "raw/2-r.bw", "colour": "red"},
+{"file": "raw/5-r.bw", "colour": "green"},
+{"file": "raw/12-r.bw", "colour": "purple"},
+{"file": "raw/17-r.bw", "colour": "yellow"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 5_ml/hr 0 vs 5_ml/hr 2 - (-)",
+		 "key" : "5_ml/hr 0 vs 5_ml/hr 2 - (-)",
+		 "variance_band": true,
+		"style": {"height": 200},
+		"category" : "5_ml-hr 0 vs 5_ml-hr 2"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/5_ml_hr_0_vs_5_ml_hr_2-limma_logFC-av-r.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 5_ml/hr 0 vs 5_ml/hr 2 - LIMMA logFC averaged over genes (-), sig < 0.1",
+		 "key" : "5_ml/hr 0 vs 5_ml/hr 2 - LIMMA logFC averaged over genes (-), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "5_ml-hr 0 vs 5_ml-hr 2"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/5_ml_hr_0_vs_5_ml_hr_2-limma_logFC-unav-r.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 5_ml/hr 0 vs 5_ml/hr 2 - LIMMA logFC  (-), sig < 0.1",
+		 "key" : "5_ml/hr 0 vs 5_ml/hr 2 - LIMMA logFC  (-), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "5_ml-hr 0 vs 5_ml-hr 2"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/7-r.bw", "colour": "blue"},
+{"file": "raw/11-r.bw", "colour": "red"},
+{"file": "raw/12-r.bw", "colour": "green"},
+{"file": "raw/17-r.bw", "colour": "purple"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 5_ml/hr 1 vs 5_ml/hr 2 - (-)",
+		 "key" : "5_ml/hr 1 vs 5_ml/hr 2 - (-)",
+		 "variance_band": true,
+		"style": {"height": 200},
+		"category" : "5_ml-hr 1 vs 5_ml-hr 2"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/5_ml_hr_1_vs_5_ml_hr_2-limma_logFC-av-r.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 5_ml/hr 1 vs 5_ml/hr 2 - LIMMA logFC averaged over genes (-), sig < 0.1",
+		 "key" : "5_ml/hr 1 vs 5_ml/hr 2 - LIMMA logFC averaged over genes (-), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "5_ml-hr 1 vs 5_ml-hr 2"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/5_ml_hr_1_vs_5_ml_hr_2-limma_logFC-unav-r.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 5_ml/hr 1 vs 5_ml/hr 2 - LIMMA logFC  (-), sig < 0.1",
+		 "key" : "5_ml/hr 1 vs 5_ml/hr 2 - LIMMA logFC  (-), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "5_ml-hr 1 vs 5_ml-hr 2"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/3-r.bw", "colour": "blue"},
+{"file": "raw/14-r.bw", "colour": "red"},
+{"file": "raw/1-r.bw", "colour": "green"},
+{"file": "raw/2-r.bw", "colour": "purple"},
+{"file": "raw/5-r.bw", "colour": "yellow"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 0 vs 5_ml/hr 0 - (-)",
+		 "key" : "15_ml/hr 0 vs 5_ml/hr 0 - (-)",
+		 "variance_band": true,
+		"style": {"height": 200},
+		"category" : "15_ml-hr 0 vs 5_ml-hr 0"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/15_ml_hr_0_vs_5_ml_hr_0-limma_logFC-av-r.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 0 vs 5_ml/hr 0 - LIMMA logFC averaged over genes (-), sig < 0.1",
+		 "key" : "15_ml/hr 0 vs 5_ml/hr 0 - LIMMA logFC averaged over genes (-), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "15_ml-hr 0 vs 5_ml-hr 0"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/15_ml_hr_0_vs_5_ml_hr_0-limma_logFC-unav-r.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 0 vs 5_ml/hr 0 - LIMMA logFC  (-), sig < 0.1",
+		 "key" : "15_ml/hr 0 vs 5_ml/hr 0 - LIMMA logFC  (-), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "15_ml-hr 0 vs 5_ml-hr 0"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/9-r.bw", "colour": "blue"},
+{"file": "raw/15-r.bw", "colour": "red"},
+{"file": "raw/7-r.bw", "colour": "green"},
+{"file": "raw/11-r.bw", "colour": "purple"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 1 vs 5_ml/hr 1 - (-)",
+		 "key" : "15_ml/hr 1 vs 5_ml/hr 1 - (-)",
+		 "variance_band": true,
+		"style": {"height": 200},
+		"category" : "15_ml-hr 1 vs 5_ml-hr 1"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/15_ml_hr_1_vs_5_ml_hr_1-limma_logFC-av-r.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 1 vs 5_ml/hr 1 - LIMMA logFC averaged over genes (-), sig < 0.1",
+		 "key" : "15_ml/hr 1 vs 5_ml/hr 1 - LIMMA logFC averaged over genes (-), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "15_ml-hr 1 vs 5_ml-hr 1"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/15_ml_hr_1_vs_5_ml_hr_1-limma_logFC-unav-r.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 1 vs 5_ml/hr 1 - LIMMA logFC  (-), sig < 0.1",
+		 "key" : "15_ml/hr 1 vs 5_ml/hr 1 - LIMMA logFC  (-), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "15_ml-hr 1 vs 5_ml-hr 1"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/10-r.bw", "colour": "blue"},
+{"file": "raw/16-r.bw", "colour": "red"},
+{"file": "raw/12-r.bw", "colour": "green"},
+{"file": "raw/17-r.bw", "colour": "purple"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 2 vs 5_ml/hr 2 - (-)",
+		 "key" : "15_ml/hr 2 vs 5_ml/hr 2 - (-)",
+		 "variance_band": true,
+		"style": {"height": 200},
+		"category" : "15_ml-hr 2 vs 5_ml-hr 2"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/15_ml_hr_2_vs_5_ml_hr_2-limma_logFC-av-r.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 2 vs 5_ml/hr 2 - LIMMA logFC averaged over genes (-), sig < 0.1",
+		 "key" : "15_ml/hr 2 vs 5_ml/hr 2 - LIMMA logFC averaged over genes (-), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "15_ml-hr 2 vs 5_ml-hr 2"
+	},
+	
+	
+	{
+		 "storeClass" : "JBrowse/Store/MultiBigWig",
+		 "urlTemplate" : [
+{"file": "raw/15_ml_hr_2_vs_5_ml_hr_2-limma_logFC-unav-r.bw", "colour": "red"}
+		 ],
+		 "type" : "JBrowse/View/Track/Wiggle/MultiXYPlot",
+		 "label" : "multi big wig 15_ml/hr 2 vs 5_ml/hr 2 - LIMMA logFC  (-), sig < 0.1",
+		 "key" : "15_ml/hr 2 vs 5_ml/hr 2 - LIMMA logFC  (-), sig < 0.1",
+		 "style": {"height": 200},
+		"category" : "15_ml-hr 2 vs 5_ml-hr 2"
+	},
+	
+		
+	
+
+
+///////////////////////////////////////////////////////////////////////////////////
+	 
+   ],
+   "names" : {
+      "url" : "names/",
+      "type" : "Hash"
+   },
+   "formatVersion" : 1
+}
