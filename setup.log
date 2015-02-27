@@ -1,0 +1,2164 @@
+
+============== System information ====
++ lsb_release -a
+LSB Version:	:core-4.0-amd64:core-4.0-ia32:core-4.0-noarch:graphics-4.0-amd64:graphics-4.0-ia32:graphics-4.0-noarch:printing-4.0-amd64:printing-4.0-ia32:printing-4.0-noarch
+Distributor ID:	CentOS
+Description:	CentOS release 5.10 (Final)
+Release:	5.10
+Codename:	Final
++ uname -a
+Linux bugs2.sgul.ac.uk 2.6.18-274.3.1.el5 #1 SMP Tue Sep 6 20:13:52 EDT 2011 x86_64 x86_64 x86_64 GNU/Linux
++ sw_vers
+./setup.sh: line 21: sw_vers: command not found
++ system_profiler
+./setup.sh: line 22: system_profiler: command not found
++ grep MemTotal /proc/meminfo
+MemTotal:     12370880 kB
++ echo
+
++ echo
+
++ bin/cpanm -v --notest -l extlib/ --installdeps .
+cpanm (App::cpanminus) 1.5007 on perl 5.008008 built for x86_64-linux-thread-multi
+Work directory is /home/rtyler/.cpanm/work/1389613679.5178
+You have make /usr/bin/make
+You have LWP 5.834
+You have /bin/tar: tar (GNU tar) 1.15.1
+You have /usr/bin/unzip
+Checking if you have ExtUtils::MakeMaker 6.31 ... No (6.30 < 6.31)
+Checking if you have ExtUtils::Install 1.46 ... No (1.33 < 1.46)
+==> Found dependencies: ExtUtils::MakeMaker, ExtUtils::Install
+Searching ExtUtils::MakeMaker on cpanmetadb ...
+--> Working on ExtUtils::MakeMaker
+Fetching http://search.cpan.org/CPAN/authors/id/B/BI/BINGOS/ExtUtils-MakeMaker-6.86.tar.gz ... OK
+Unpacking ExtUtils-MakeMaker-6.86.tar.gz
+ExtUtils-MakeMaker-6.86/
+ExtUtils-MakeMaker-6.86/MANIFEST.SKIP
+ExtUtils-MakeMaker-6.86/NOTES
+ExtUtils-MakeMaker-6.86/META.yml
+ExtUtils-MakeMaker-6.86/t/
+ExtUtils-MakeMaker-6.86/t/build_man.t
+ExtUtils-MakeMaker-6.86/t/recurs.t
+ExtUtils-MakeMaker-6.86/t/is_of_type.t
+ExtUtils-MakeMaker-6.86/t/MM_OS2.t
+ExtUtils-MakeMaker-6.86/t/echo.t
+ExtUtils-MakeMaker-6.86/t/META_for_testing.json
+ExtUtils-MakeMaker-6.86/t/INST_PREFIX.t
+ExtUtils-MakeMaker-6.86/t/prefixify.t
+ExtUtils-MakeMaker-6.86/t/prereq_print.t
+ExtUtils-MakeMaker-6.86/t/pod2man.t
+ExtUtils-MakeMaker-6.86/t/config.t
+ExtUtils-MakeMaker-6.86/t/00compile.t
+ExtUtils-MakeMaker-6.86/t/miniperl.t
+ExtUtils-MakeMaker-6.86/t/lib/
+ExtUtils-MakeMaker-6.86/t/lib/TieOut.pm
+ExtUtils-MakeMaker-6.86/t/lib/TieIn.pm
+ExtUtils-MakeMaker-6.86/t/lib/Test/
+ExtUtils-MakeMaker-6.86/t/lib/Test/More.pm
+ExtUtils-MakeMaker-6.86/t/lib/Test/Builder/
+ExtUtils-MakeMaker-6.86/t/lib/Test/Builder/Module.pm
+ExtUtils-MakeMaker-6.86/t/lib/Test/Builder/IO/
+ExtUtils-MakeMaker-6.86/t/lib/Test/Builder/IO/Scalar.pm
+ExtUtils-MakeMaker-6.86/t/lib/Test/Simple.pm
+ExtUtils-MakeMaker-6.86/t/lib/Test/Builder.pm
+ExtUtils-MakeMaker-6.86/t/lib/MakeMaker/
+ExtUtils-MakeMaker-6.86/t/lib/MakeMaker/Test/
+ExtUtils-MakeMaker-6.86/t/lib/MakeMaker/Test/Utils.pm
+ExtUtils-MakeMaker-6.86/t/lib/MakeMaker/Test/Setup/
+ExtUtils-MakeMaker-6.86/t/lib/MakeMaker/Test/Setup/Problem.pm
+ExtUtils-MakeMaker-6.86/t/lib/MakeMaker/Test/Setup/PL_FILES.pm
+ExtUtils-MakeMaker-6.86/t/lib/MakeMaker/Test/Setup/MPV.pm
+ExtUtils-MakeMaker-6.86/t/lib/MakeMaker/Test/Setup/XS.pm
+ExtUtils-MakeMaker-6.86/t/lib/MakeMaker/Test/Setup/BFD.pm
+ExtUtils-MakeMaker-6.86/t/lib/MakeMaker/Test/Setup/Recurs.pm
+ExtUtils-MakeMaker-6.86/t/lib/MakeMaker/Test/Setup/SAS.pm
+ExtUtils-MakeMaker-6.86/t/lib/MakeMaker/Test/NoXS.pm
+ExtUtils-MakeMaker-6.86/t/dir_target.t
+ExtUtils-MakeMaker-6.86/t/testlib.t
+ExtUtils-MakeMaker-6.86/t/MakeMaker_Parameters.t
+ExtUtils-MakeMaker-6.86/t/arch_check.t
+ExtUtils-MakeMaker-6.86/t/problems.t
+ExtUtils-MakeMaker-6.86/t/prereq.t
+ExtUtils-MakeMaker-6.86/t/FIRST_MAKEFILE.t
+ExtUtils-MakeMaker-6.86/t/MM_NW5.t
+ExtUtils-MakeMaker-6.86/t/several_authors.t
+ExtUtils-MakeMaker-6.86/t/MM_Win32.t
+ExtUtils-MakeMaker-6.86/t/metafile_data.t
+ExtUtils-MakeMaker-6.86/t/MM_Unix.t
+ExtUtils-MakeMaker-6.86/t/test_boilerplate.t
+ExtUtils-MakeMaker-6.86/t/parse_version.t
+ExtUtils-MakeMaker-6.86/t/revision.t
+ExtUtils-MakeMaker-6.86/t/cd.t
+ExtUtils-MakeMaker-6.86/t/fixin.t
+ExtUtils-MakeMaker-6.86/t/make.t
+ExtUtils-MakeMaker-6.86/t/fix_libs.t
+ExtUtils-MakeMaker-6.86/t/PL_FILES.t
+ExtUtils-MakeMaker-6.86/t/writemakefile_args.t
+ExtUtils-MakeMaker-6.86/t/prompt.t
+ExtUtils-MakeMaker-6.86/t/basic.t
+ExtUtils-MakeMaker-6.86/t/oneliner.t
+ExtUtils-MakeMaker-6.86/t/WriteEmptyMakefile.t
+ExtUtils-MakeMaker-6.86/t/MM_VMS.t
+ExtUtils-MakeMaker-6.86/t/hints.t
+ExtUtils-MakeMaker-6.86/t/testdata/
+ExtUtils-MakeMaker-6.86/t/testdata/reallylongdirectoryname/
+ExtUtils-MakeMaker-6.86/t/testdata/reallylongdirectoryname/arch2/
+ExtUtils-MakeMaker-6.86/t/testdata/reallylongdirectoryname/arch2/Config.pm
+ExtUtils-MakeMaker-6.86/t/testdata/reallylongdirectoryname/arch1/
+ExtUtils-MakeMaker-6.86/t/testdata/reallylongdirectoryname/arch1/Config.pm
+ExtUtils-MakeMaker-6.86/t/MM_Any.t
+ExtUtils-MakeMaker-6.86/t/META_for_testing_tricky_version.yml
+ExtUtils-MakeMaker-6.86/t/backwards.t
+ExtUtils-MakeMaker-6.86/t/Liblist.t
+ExtUtils-MakeMaker-6.86/t/maketext_filter.t
+ExtUtils-MakeMaker-6.86/t/Liblist_Kid.t
+ExtUtils-MakeMaker-6.86/t/installed_file.t
+ExtUtils-MakeMaker-6.86/t/pm_to_blib.t
+ExtUtils-MakeMaker-6.86/t/INSTALL_BASE.t
+ExtUtils-MakeMaker-6.86/t/parse_abstract.t
+ExtUtils-MakeMaker-6.86/t/Mkbootstrap.t
+ExtUtils-MakeMaker-6.86/t/split_command.t
+ExtUtils-MakeMaker-6.86/t/MM_BeOS.t
+ExtUtils-MakeMaker-6.86/t/VERSION_FROM.t
+ExtUtils-MakeMaker-6.86/t/liblist/
+ExtUtils-MakeMaker-6.86/t/liblist/win32/
+ExtUtils-MakeMaker-6.86/t/liblist/win32/vc/
+ExtUtils-MakeMaker-6.86/t/liblist/win32/vc/vctest.lib
+ExtUtils-MakeMaker-6.86/t/liblist/win32/lib/
+ExtUtils-MakeMaker-6.86/t/liblist/win32/lib/CORE/
+ExtUtils-MakeMaker-6.86/t/liblist/win32/lib/CORE/c_test.lib
+ExtUtils-MakeMaker-6.86/t/liblist/win32/lib/CORE/double.lib
+ExtUtils-MakeMaker-6.86/t/liblist/win32/imp.dll.a
+ExtUtils-MakeMaker-6.86/t/liblist/win32/test.a.lib
+ExtUtils-MakeMaker-6.86/t/liblist/win32/test.meep
+ExtUtils-MakeMaker-6.86/t/liblist/win32/libpath/
+ExtUtils-MakeMaker-6.86/t/liblist/win32/libpath/lp_test.lib
+ExtUtils-MakeMaker-6.86/t/liblist/win32/test.lib
+ExtUtils-MakeMaker-6.86/t/liblist/win32/lib__test.lib
+ExtUtils-MakeMaker-6.86/t/liblist/win32/space lib.lib
+ExtUtils-MakeMaker-6.86/t/liblist/win32/di r/
+ExtUtils-MakeMaker-6.86/t/liblist/win32/di r/dir_test.lib
+ExtUtils-MakeMaker-6.86/t/liblist/win32/double.lib
+ExtUtils-MakeMaker-6.86/t/liblist/win32/pl.lib
+ExtUtils-MakeMaker-6.86/t/liblist/win32/test2.lib
+ExtUtils-MakeMaker-6.86/t/liblist/win32/__test.lib
+ExtUtils-MakeMaker-6.86/t/liblist/win32/lib_test.lib
+ExtUtils-MakeMaker-6.86/t/liblist/win32/dir/
+ExtUtils-MakeMaker-6.86/t/liblist/win32/dir/dir_test.lib
+ExtUtils-MakeMaker-6.86/t/pm.t
+ExtUtils-MakeMaker-6.86/t/INST.t
+ExtUtils-MakeMaker-6.86/t/MM_Cygwin.t
+ExtUtils-MakeMaker-6.86/t/postamble.t
+ExtUtils-MakeMaker-6.86/t/xs.t
+ExtUtils-MakeMaker-6.86/t/metafile_file.t
+ExtUtils-MakeMaker-6.86/t/min_perl_version.t
+ExtUtils-MakeMaker-6.86/t/META_for_testing.yml
+ExtUtils-MakeMaker-6.86/t/01perl_bugs.t
+ExtUtils-MakeMaker-6.86/t/meta_convert.t
+ExtUtils-MakeMaker-6.86/lib/
+ExtUtils-MakeMaker-6.86/lib/ExtUtils/
+ExtUtils-MakeMaker-6.86/lib/ExtUtils/MM_UWIN.pm
+ExtUtils-MakeMaker-6.86/lib/ExtUtils/Liblist.pm
+ExtUtils-MakeMaker-6.86/lib/ExtUtils/MM_Win32.pm
+ExtUtils-MakeMaker-6.86/lib/ExtUtils/MM_NW5.pm
+ExtUtils-MakeMaker-6.86/lib/ExtUtils/MM_Darwin.pm
+ExtUtils-MakeMaker-6.86/lib/ExtUtils/MY.pm
+ExtUtils-MakeMaker-6.86/lib/ExtUtils/Mkbootstrap.pm
+ExtUtils-MakeMaker-6.86/lib/ExtUtils/MakeMaker.pm
+ExtUtils-MakeMaker-6.86/lib/ExtUtils/MM_Any.pm
+ExtUtils-MakeMaker-6.86/lib/ExtUtils/MM_AIX.pm
+ExtUtils-MakeMaker-6.86/lib/ExtUtils/MM.pm
+ExtUtils-MakeMaker-6.86/lib/ExtUtils/Liblist/
+ExtUtils-MakeMaker-6.86/lib/ExtUtils/Liblist/Kid.pm
+ExtUtils-MakeMaker-6.86/lib/ExtUtils/testlib.pm
+ExtUtils-MakeMaker-6.86/lib/ExtUtils/Command/
+ExtUtils-MakeMaker-6.86/lib/ExtUtils/Command/MM.pm
+ExtUtils-MakeMaker-6.86/lib/ExtUtils/MM_Unix.pm
+ExtUtils-MakeMaker-6.86/lib/ExtUtils/MM_Win95.pm
+ExtUtils-MakeMaker-6.86/lib/ExtUtils/MM_MacOS.pm
+ExtUtils-MakeMaker-6.86/lib/ExtUtils/MM_OS2.pm
+ExtUtils-MakeMaker-6.86/lib/ExtUtils/MM_QNX.pm
+ExtUtils-MakeMaker-6.86/lib/ExtUtils/MM_BeOS.pm
+ExtUtils-MakeMaker-6.86/lib/ExtUtils/MM_VOS.pm
+ExtUtils-MakeMaker-6.86/lib/ExtUtils/MM_Cygwin.pm
+ExtUtils-MakeMaker-6.86/lib/ExtUtils/Mksymlists.pm
+ExtUtils-MakeMaker-6.86/lib/ExtUtils/MM_DOS.pm
+ExtUtils-MakeMaker-6.86/lib/ExtUtils/MM_VMS.pm
+ExtUtils-MakeMaker-6.86/lib/ExtUtils/MakeMaker/
+ExtUtils-MakeMaker-6.86/lib/ExtUtils/MakeMaker/Config.pm
+ExtUtils-MakeMaker-6.86/lib/ExtUtils/MakeMaker/FAQ.pod
+ExtUtils-MakeMaker-6.86/lib/ExtUtils/MakeMaker/Tutorial.pod
+ExtUtils-MakeMaker-6.86/Makefile.PL
+ExtUtils-MakeMaker-6.86/TODO
+ExtUtils-MakeMaker-6.86/META.json
+ExtUtils-MakeMaker-6.86/bin/
+ExtUtils-MakeMaker-6.86/bin/instmodsh
+ExtUtils-MakeMaker-6.86/bundled/
+ExtUtils-MakeMaker-6.86/bundled/JSON-PP-Compat5006/
+ExtUtils-MakeMaker-6.86/bundled/JSON-PP-Compat5006/JSON/
+ExtUtils-MakeMaker-6.86/bundled/JSON-PP-Compat5006/JSON/PP/
+ExtUtils-MakeMaker-6.86/bundled/JSON-PP-Compat5006/JSON/PP/Compat5006.pm
+ExtUtils-MakeMaker-6.86/bundled/File-Temp/
+ExtUtils-MakeMaker-6.86/bundled/File-Temp/File/
+ExtUtils-MakeMaker-6.86/bundled/File-Temp/File/Temp.pm
+ExtUtils-MakeMaker-6.86/bundled/version/
+ExtUtils-MakeMaker-6.86/bundled/version/version/
+ExtUtils-MakeMaker-6.86/bundled/version/version/vpp.pm
+ExtUtils-MakeMaker-6.86/bundled/version/version/Internals.pod
+ExtUtils-MakeMaker-6.86/bundled/version/version.pod
+ExtUtils-MakeMaker-6.86/bundled/version/version.pm
+ExtUtils-MakeMaker-6.86/bundled/ExtUtils-Install/
+ExtUtils-MakeMaker-6.86/bundled/ExtUtils-Install/ExtUtils/
+ExtUtils-MakeMaker-6.86/bundled/ExtUtils-Install/ExtUtils/Packlist.pm
+ExtUtils-MakeMaker-6.86/bundled/ExtUtils-Install/ExtUtils/Installed.pm
+ExtUtils-MakeMaker-6.86/bundled/ExtUtils-Install/ExtUtils/Install.pm
+ExtUtils-MakeMaker-6.86/bundled/JSON-PP/
+ExtUtils-MakeMaker-6.86/bundled/JSON-PP/JSON/
+ExtUtils-MakeMaker-6.86/bundled/JSON-PP/JSON/PP.pm
+ExtUtils-MakeMaker-6.86/bundled/JSON-PP/JSON/PP/
+ExtUtils-MakeMaker-6.86/bundled/JSON-PP/JSON/PP/Boolean.pm
+ExtUtils-MakeMaker-6.86/bundled/CPAN-Meta-YAML/
+ExtUtils-MakeMaker-6.86/bundled/CPAN-Meta-YAML/CPAN/
+ExtUtils-MakeMaker-6.86/bundled/CPAN-Meta-YAML/CPAN/Meta/
+ExtUtils-MakeMaker-6.86/bundled/CPAN-Meta-YAML/CPAN/Meta/YAML.pm
+ExtUtils-MakeMaker-6.86/bundled/ExtUtils-Manifest/
+ExtUtils-MakeMaker-6.86/bundled/ExtUtils-Manifest/ExtUtils/
+ExtUtils-MakeMaker-6.86/bundled/ExtUtils-Manifest/ExtUtils/MANIFEST.SKIP
+ExtUtils-MakeMaker-6.86/bundled/ExtUtils-Manifest/ExtUtils/Manifest.pm
+ExtUtils-MakeMaker-6.86/bundled/ExtUtils-Command/
+ExtUtils-MakeMaker-6.86/bundled/ExtUtils-Command/ExtUtils/
+ExtUtils-MakeMaker-6.86/bundled/ExtUtils-Command/ExtUtils/Command.pm
+ExtUtils-MakeMaker-6.86/bundled/CPAN-Meta/
+ExtUtils-MakeMaker-6.86/bundled/CPAN-Meta/CPAN/
+ExtUtils-MakeMaker-6.86/bundled/CPAN-Meta/CPAN/Meta.pm
+ExtUtils-MakeMaker-6.86/bundled/CPAN-Meta/CPAN/Meta/
+ExtUtils-MakeMaker-6.86/bundled/CPAN-Meta/CPAN/Meta/History.pm
+ExtUtils-MakeMaker-6.86/bundled/CPAN-Meta/CPAN/Meta/Feature.pm
+ExtUtils-MakeMaker-6.86/bundled/CPAN-Meta/CPAN/Meta/Prereqs.pm
+ExtUtils-MakeMaker-6.86/bundled/CPAN-Meta/CPAN/Meta/Spec.pm
+ExtUtils-MakeMaker-6.86/bundled/CPAN-Meta/CPAN/Meta/Requirements.pm
+ExtUtils-MakeMaker-6.86/bundled/CPAN-Meta/CPAN/Meta/Validator.pm
+ExtUtils-MakeMaker-6.86/bundled/CPAN-Meta/CPAN/Meta/Converter.pm
+ExtUtils-MakeMaker-6.86/bundled/File-Copy-Recursive/
+ExtUtils-MakeMaker-6.86/bundled/File-Copy-Recursive/File/
+ExtUtils-MakeMaker-6.86/bundled/File-Copy-Recursive/File/Copy/
+ExtUtils-MakeMaker-6.86/bundled/File-Copy-Recursive/File/Copy/Recursive.pm
+ExtUtils-MakeMaker-6.86/bundled/Parse-CPAN-Meta/
+ExtUtils-MakeMaker-6.86/bundled/Parse-CPAN-Meta/Parse/
+ExtUtils-MakeMaker-6.86/bundled/Parse-CPAN-Meta/Parse/CPAN/
+ExtUtils-MakeMaker-6.86/bundled/Parse-CPAN-Meta/Parse/CPAN/Meta.pm
+ExtUtils-MakeMaker-6.86/bundled/Scalar-List-Utils/
+ExtUtils-MakeMaker-6.86/bundled/Scalar-List-Utils/List/
+ExtUtils-MakeMaker-6.86/bundled/Scalar-List-Utils/List/Util.pm
+ExtUtils-MakeMaker-6.86/bundled/Scalar-List-Utils/List/Util/
+ExtUtils-MakeMaker-6.86/bundled/Scalar-List-Utils/List/Util/PP.pm
+ExtUtils-MakeMaker-6.86/bundled/Scalar-List-Utils/Scalar/
+ExtUtils-MakeMaker-6.86/bundled/Scalar-List-Utils/Scalar/Util.pm
+ExtUtils-MakeMaker-6.86/bundled/Scalar-List-Utils/Scalar/Util/
+ExtUtils-MakeMaker-6.86/bundled/Scalar-List-Utils/Scalar/Util/PP.pm
+ExtUtils-MakeMaker-6.86/bundled/README
+ExtUtils-MakeMaker-6.86/MANIFEST
+ExtUtils-MakeMaker-6.86/PATCHING
+ExtUtils-MakeMaker-6.86/INSTALL
+ExtUtils-MakeMaker-6.86/Changes
+ExtUtils-MakeMaker-6.86/my/
+ExtUtils-MakeMaker-6.86/my/bundles.pm
+ExtUtils-MakeMaker-6.86/README
+ExtUtils-MakeMaker-6.86/README.packaging
+ExtUtils-MakeMaker-6.86/.perlcriticrc
+Entering ExtUtils-MakeMaker-6.86
+Checking configure dependencies from META.yml
+Configuring ExtUtils-MakeMaker-6.86 ... Running Makefile.PL
+Using included version of ExtUtils::Install (1.54) as it is newer than the installed version (1.33).
+Using included version of File::Temp (0.22) as it is newer than the installed version (0.16).
+Using included version of JSON::PP (2.27203) as it is newer than the installed version (2.24000).
+Using included version of ExtUtils::Command (1.16) as it is newer than the installed version (1.09).
+Using included version of CPAN::Meta (2.120351) as it is newer than the installed version (2.112150).
+Using included version of ExtUtils::Manifest (1.60) as it is newer than the installed version (1.46).
+Using included version of Parse::CPAN::Meta (1.4405) as it is newer than the installed version (1.40).
+Using included version of CPAN::Meta::YAML (0.008) as it is newer than the installed version (0.003).
+Checking if your kit is complete...
+Warning: the following files are missing in your kit:
+	't/liblist/win32/di
+	't/liblist/win32/space
+Please inform the author.
+Generating a Unix-style Makefile
+Writing Makefile for ExtUtils::MakeMaker
+Writing MYMETA.yml and MYMETA.json
+OK
+Checking dependencies from MYMETA.json ...
+Checking if you have Data::Dumper 0 ... Yes (2.125)
+Checking if you have Pod::Man 0 ... Yes (1.37)
+Checking if you have File::Spec 0.8 ... Yes (3.33)
+Checking if you have File::Basename 0 ... Yes (2.74)
+Checking if you have DirHandle 0 ... Yes (1.00)
+Building ExtUtils-MakeMaker-6.86 ... cp inc/ExtUtils/Manifest.pm blib/lib/ExtUtils/Manifest.pm
+cp lib/ExtUtils/MM_VOS.pm blib/lib/ExtUtils/MM_VOS.pm
+cp lib/ExtUtils/Mksymlists.pm blib/lib/ExtUtils/Mksymlists.pm
+cp lib/ExtUtils/MM.pm blib/lib/ExtUtils/MM.pm
+cp inc/JSON/PP.pm blib/lib/JSON/PP.pm
+cp lib/ExtUtils/MM_UWIN.pm blib/lib/ExtUtils/MM_UWIN.pm
+cp lib/ExtUtils/testlib.pm blib/lib/ExtUtils/testlib.pm
+cp lib/ExtUtils/MM_DOS.pm blib/lib/ExtUtils/MM_DOS.pm
+cp lib/ExtUtils/MM_Cygwin.pm blib/lib/ExtUtils/MM_Cygwin.pm
+cp lib/ExtUtils/MM_Win95.pm blib/lib/ExtUtils/MM_Win95.pm
+cp lib/ExtUtils/Liblist.pm blib/lib/ExtUtils/Liblist.pm
+cp lib/ExtUtils/MM_Darwin.pm blib/lib/ExtUtils/MM_Darwin.pm
+cp lib/ExtUtils/MM_AIX.pm blib/lib/ExtUtils/MM_AIX.pm
+cp inc/CPAN/Meta/Requirements.pm blib/lib/CPAN/Meta/Requirements.pm
+cp lib/ExtUtils/Mkbootstrap.pm blib/lib/ExtUtils/Mkbootstrap.pm
+cp lib/ExtUtils/Liblist/Kid.pm blib/lib/ExtUtils/Liblist/Kid.pm
+cp lib/ExtUtils/MakeMaker/FAQ.pod blib/lib/ExtUtils/MakeMaker/FAQ.pod
+cp inc/ExtUtils/MANIFEST.SKIP blib/lib/ExtUtils/MANIFEST.SKIP
+cp lib/ExtUtils/MM_NW5.pm blib/lib/ExtUtils/MM_NW5.pm
+cp inc/ExtUtils/Command.pm blib/lib/ExtUtils/Command.pm
+cp lib/ExtUtils/MakeMaker.pm blib/lib/ExtUtils/MakeMaker.pm
+cp lib/ExtUtils/MM_OS2.pm blib/lib/ExtUtils/MM_OS2.pm
+cp inc/CPAN/Meta/Feature.pm blib/lib/CPAN/Meta/Feature.pm
+cp lib/ExtUtils/MM_Unix.pm blib/lib/ExtUtils/MM_Unix.pm
+cp lib/ExtUtils/MM_Win32.pm blib/lib/ExtUtils/MM_Win32.pm
+cp inc/ExtUtils/Installed.pm blib/lib/ExtUtils/Installed.pm
+cp inc/JSON/PP/Boolean.pm blib/lib/JSON/PP/Boolean.pm
+cp inc/CPAN/Meta/Spec.pm blib/lib/CPAN/Meta/Spec.pm
+cp inc/CPAN/Meta/History.pm blib/lib/CPAN/Meta/History.pm
+cp lib/ExtUtils/MY.pm blib/lib/ExtUtils/MY.pm
+cp inc/ExtUtils/Packlist.pm blib/lib/ExtUtils/Packlist.pm
+cp lib/ExtUtils/MM_MacOS.pm blib/lib/ExtUtils/MM_MacOS.pm
+cp lib/ExtUtils/MM_VMS.pm blib/lib/ExtUtils/MM_VMS.pm
+cp lib/ExtUtils/MM_BeOS.pm blib/lib/ExtUtils/MM_BeOS.pm
+cp lib/ExtUtils/MakeMaker/Tutorial.pod blib/lib/ExtUtils/MakeMaker/Tutorial.pod
+cp inc/CPAN/Meta/YAML.pm blib/lib/CPAN/Meta/YAML.pm
+cp lib/ExtUtils/MM_QNX.pm blib/lib/ExtUtils/MM_QNX.pm
+cp inc/CPAN/Meta/Converter.pm blib/lib/CPAN/Meta/Converter.pm
+cp inc/ExtUtils/Install.pm blib/lib/ExtUtils/Install.pm
+cp lib/ExtUtils/Command/MM.pm blib/lib/ExtUtils/Command/MM.pm
+cp lib/ExtUtils/MakeMaker/Config.pm blib/lib/ExtUtils/MakeMaker/Config.pm
+cp inc/CPAN/Meta.pm blib/lib/CPAN/Meta.pm
+cp inc/CPAN/Meta/Prereqs.pm blib/lib/CPAN/Meta/Prereqs.pm
+cp inc/Parse/CPAN/Meta.pm blib/lib/Parse/CPAN/Meta.pm
+cp inc/File/Temp.pm blib/lib/File/Temp.pm
+cp inc/CPAN/Meta/Validator.pm blib/lib/CPAN/Meta/Validator.pm
+cp lib/ExtUtils/MM_Any.pm blib/lib/ExtUtils/MM_Any.pm
+cp bin/instmodsh blib/script/instmodsh
+/usr/bin/perl "-Iblib/arch" "-Iblib/lib" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/instmodsh
+Manifying blib/man1/instmodsh.1
+inc/Parse/CPAN/Meta.pm:131: Unknown command paragraph "=encoding utf-8"
+Manifying blib/man3/CPAN::Meta.3pm
+Manifying blib/man3/CPAN::Meta::Converter.3pm
+Manifying blib/man3/CPAN::Meta::Feature.3pm
+Manifying blib/man3/CPAN::Meta::History.3pm
+Manifying blib/man3/CPAN::Meta::Prereqs.3pm
+Manifying blib/man3/CPAN::Meta::Requirements.3pm
+Manifying blib/man3/CPAN::Meta::Spec.3pm
+Manifying blib/man3/CPAN::Meta::Validator.3pm
+Manifying blib/man3/CPAN::Meta::YAML.3pm
+Manifying blib/man3/ExtUtils::Command.3pm
+Manifying blib/man3/ExtUtils::Install.3pm
+Manifying blib/man3/ExtUtils::Installed.3pm
+Manifying blib/man3/ExtUtils::Manifest.3pm
+Manifying blib/man3/ExtUtils::Packlist.3pm
+Manifying blib/man3/File::Temp.3pm
+Manifying blib/man3/JSON::PP.3pm
+Manifying blib/man3/JSON::PP::Boolean.3pm
+Manifying blib/man3/Parse::CPAN::Meta.3pm
+Manifying blib/man3/ExtUtils::Command::MM.3pm
+Manifying blib/man3/ExtUtils::Liblist.3pm
+Manifying blib/man3/ExtUtils::MM.3pm
+Manifying blib/man3/ExtUtils::MM_AIX.3pm
+Manifying blib/man3/ExtUtils::MM_Any.3pm
+Manifying blib/man3/ExtUtils::MM_BeOS.3pm
+Manifying blib/man3/ExtUtils::MM_Cygwin.3pm
+Manifying blib/man3/ExtUtils::MM_DOS.3pm
+Manifying blib/man3/ExtUtils::MM_Darwin.3pm
+Manifying blib/man3/ExtUtils::MM_MacOS.3pm
+Manifying blib/man3/ExtUtils::MM_NW5.3pm
+Manifying blib/man3/ExtUtils::MM_OS2.3pm
+Manifying blib/man3/ExtUtils::MM_QNX.3pm
+Manifying blib/man3/ExtUtils::MM_UWIN.3pm
+Manifying blib/man3/ExtUtils::MM_Unix.3pm
+Manifying blib/man3/ExtUtils::MM_VMS.3pm
+Manifying blib/man3/ExtUtils::MM_VOS.3pm
+Manifying blib/man3/ExtUtils::MM_Win32.3pm
+Manifying blib/man3/ExtUtils::MM_Win95.3pm
+Manifying blib/man3/ExtUtils::MY.3pm
+Manifying blib/man3/ExtUtils::MakeMaker.3pm
+Manifying blib/man3/ExtUtils::MakeMaker::Config.3pm
+Manifying blib/man3/ExtUtils::MakeMaker::FAQ.3pm
+Manifying blib/man3/ExtUtils::MakeMaker::Tutorial.3pm
+Manifying blib/man3/ExtUtils::Mkbootstrap.3pm
+Manifying blib/man3/ExtUtils::Mksymlists.3pm
+Manifying blib/man3/ExtUtils::testlib.3pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/File/Temp.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/ExtUtils/MM_Cygwin.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/ExtUtils/MM_Unix.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/ExtUtils/MM_OS2.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/ExtUtils/MM_NW5.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/ExtUtils/Mksymlists.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/ExtUtils/Command.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/ExtUtils/Mkbootstrap.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/ExtUtils/MM_MacOS.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/ExtUtils/Liblist.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/ExtUtils/MM_Win32.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/ExtUtils/MM_Darwin.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/ExtUtils/MY.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/ExtUtils/MM_VMS.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/ExtUtils/MM_Win95.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/ExtUtils/Packlist.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/ExtUtils/MM_QNX.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/ExtUtils/MM_VOS.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/ExtUtils/Install.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/ExtUtils/MM_UWIN.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/ExtUtils/MANIFEST.SKIP
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/ExtUtils/MM_Any.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/ExtUtils/testlib.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/ExtUtils/Manifest.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/ExtUtils/MakeMaker.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/ExtUtils/MM.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/ExtUtils/MM_AIX.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/ExtUtils/Installed.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/ExtUtils/MM_BeOS.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/ExtUtils/MM_DOS.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/ExtUtils/MakeMaker/Tutorial.pod
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/ExtUtils/MakeMaker/FAQ.pod
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/ExtUtils/MakeMaker/Config.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/ExtUtils/Liblist/Kid.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/ExtUtils/Command/MM.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/CPAN/Meta.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/CPAN/Meta/History.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/CPAN/Meta/Spec.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/CPAN/Meta/Converter.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/CPAN/Meta/YAML.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/CPAN/Meta/Feature.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/CPAN/Meta/Validator.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/CPAN/Meta/Requirements.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/CPAN/Meta/Prereqs.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/Parse/CPAN/Meta.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/JSON/PP.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/JSON/PP/Boolean.pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man1/instmodsh.1
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/ExtUtils::Mksymlists.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/ExtUtils::MM_QNX.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/JSON::PP.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/ExtUtils::MM.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/ExtUtils::MM_Any.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/CPAN::Meta::Requirements.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/ExtUtils::MM_Win32.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/ExtUtils::Mkbootstrap.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/ExtUtils::Liblist.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/ExtUtils::Installed.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/ExtUtils::MM_OS2.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/ExtUtils::MakeMaker::FAQ.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/CPAN::Meta::Feature.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/CPAN::Meta::YAML.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/File::Temp.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/ExtUtils::MM_BeOS.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/ExtUtils::Command.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/ExtUtils::MM_AIX.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/CPAN::Meta::Spec.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/ExtUtils::MM_UWIN.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/CPAN::Meta.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/CPAN::Meta::Validator.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/CPAN::Meta::Prereqs.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/ExtUtils::MM_MacOS.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/ExtUtils::MakeMaker::Config.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/ExtUtils::MM_Cygwin.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/JSON::PP::Boolean.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/Parse::CPAN::Meta.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/ExtUtils::MM_DOS.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/ExtUtils::MM_Darwin.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/CPAN::Meta::History.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/ExtUtils::MY.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/ExtUtils::Packlist.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/ExtUtils::MM_NW5.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/ExtUtils::Manifest.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/ExtUtils::MakeMaker::Tutorial.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/ExtUtils::MM_VOS.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/ExtUtils::Install.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/ExtUtils::MM_Unix.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/ExtUtils::MM_VMS.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/ExtUtils::Command::MM.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/ExtUtils::MakeMaker.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/ExtUtils::testlib.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/ExtUtils::MM_Win95.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/CPAN::Meta::Converter.3pm
+Installing /var/www/html/jbrowse1.11/extlib/bin/instmodsh
+Appending installation info to /var/www/html/jbrowse1.11/extlib/lib/perl5/x86_64-linux-thread-multi/perllocal.pod
+OK
+Successfully installed ExtUtils-MakeMaker-6.86 (upgraded from 6.30)
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/x86_64-linux-thread-multi/.meta/ExtUtils-MakeMaker-6.86/install.json
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/x86_64-linux-thread-multi/.meta/ExtUtils-MakeMaker-6.86/MYMETA.json
+Searching ExtUtils::Install on cpanmetadb ...
+ExtUtils::Install is up to date. (1.54)
+--> Working on .
+Entering /var/www/html/jbrowse1.11
+Configuring /var/www/html/jbrowse1.11 ... Running Makefile.PL
+Warning: prerequisite Bio::GFF3::LowLevel::Parser 1.8 not found.
+Warning: prerequisite Devel::Size 0 not found.
+Warning: prerequisite Digest::Crc32 0 not found.
+Warning: prerequisite File::Next 0 not found.
+Warning: prerequisite File::Path 2 not found. We have 1.08.
+Warning: prerequisite Heap::Simple 0 not found.
+Warning: prerequisite Heap::Simple::XS 0 not found.
+Warning: prerequisite PerlIO::gzip 0 not found.
+Generating a Unix-style Makefile
+Writing Makefile for JBrowse
+OK
+Finding PREREQ from Makefile ...
+Checking if you have Capture::Tiny 0 ... Yes (0.10)
+Checking if you have Pod::Usage 0 ... Yes (1.33)
+Checking if you have Storable 0 ... Yes (2.15)
+Checking if you have JSON::XS 0 ... Yes (2.24)
+Checking if you have PerlIO::gzip 0 ... No
+Checking if you have List::Util 0 ... Yes (1.23)
+Checking if you have File::Path 2 ... No (1.08 < 2)
+Checking if you have Digest::Crc32 0 ... No
+Checking if you have local::lib 0 ... Yes (1.008004)
+Checking if you have Bio::FeatureIO 0 ... Yes (undef)
+Checking if you have DBI 0 ... Yes (1.609)
+Checking if you have warnings 0 ... Yes (1.05)
+Checking if you have base 0 ... Yes (2.07)
+Checking if you have Getopt::Long 0 ... Yes (2.35)
+Checking if you have IO::File 0 ... Yes (1.13)
+Checking if you have Bio::Index::Fasta 0 ... Yes (undef)
+Checking if you have Data::Dumper 0 ... Yes (2.125)
+Checking if you have Bio::Root::Version 1.006000 ... Yes (1.006900)
+Checking if you have DB_File 0 ... Yes (1.814)
+Checking if you have vars 0 ... Yes (1.01)
+Checking if you have Bio::Annotation::SimpleValue 0 ... Yes (undef)
+Checking if you have Parse::RecDescent 0 ... Yes (1.94)
+Checking if you have strict 0 ... Yes (1.03)
+Checking if you have Test::More 0 ... Yes (0.62)
+Checking if you have File::Temp 0 ... Yes (0.22)
+Checking if you have File::Copy::Recursive 0 ... Yes (0.38)
+Checking if you have Scalar::Util 0 ... Yes (1.23)
+Checking if you have DBD::SQLite 0 ... Yes (1.25)
+Checking if you have URI::Escape 0 ... Yes (3.31)
+Checking if you have FindBin 0 ... Yes (1.47)
+Checking if you have Heap::Simple::XS 0 ... No
+Checking if you have Heap::Simple 0 ... No
+Checking if you have Fcntl 0 ... Yes (1.05)
+Checking if you have File::Spec 0 ... Yes (3.33)
+Checking if you have POSIX 0 ... Yes (1.09)
+Checking if you have Devel::Size 0 ... No
+Checking if you have File::Spec::Functions 0 ... Yes (3.33)
+Checking if you have Bio::SeqFeature::Lite 0 ... Yes (undef)
+Checking if you have Bio::GFF3::LowLevel::Parser 1.8 ... No
+Checking if you have IO::Uncompress::Gunzip 0 ... Yes (2.030)
+Checking if you have Hash::Merge 0 ... Yes (0.11)
+Checking if you have constant 0 ... Yes (1.05)
+Checking if you have Exporter 0 ... Yes (5.58)
+Checking if you have Bio::OntologyIO 0 ... Yes (undef)
+Checking if you have Carp 0 ... Yes (1.04)
+Checking if you have Bio::SeqFeature::Annotated 0 ... Yes (undef)
+Checking if you have Test::Warn 0 ... Yes (0.21)
+Checking if you have File::Next 0 ... No
+Checking if you have File::Basename 0 ... Yes (2.74)
+Checking if you have JSON 2 ... Yes (2.15)
+Checking if you have Cwd 0 ... Yes (3.12)
+==> Found dependencies: PerlIO::gzip, File::Path, Digest::Crc32, Heap::Simple::XS, Heap::Simple, Devel::Size, Bio::GFF3::LowLevel::Parser, File::Next
+Searching PerlIO::gzip on cpanmetadb ...
+--> Working on PerlIO::gzip
+Fetching http://search.cpan.org/CPAN/authors/id/N/NW/NWCLARK/PerlIO-gzip-0.18.tar.gz ... OK
+Unpacking PerlIO-gzip-0.18.tar.gz
+PerlIO-gzip-0.18
+PerlIO-gzip-0.18/gzip.pm
+PerlIO-gzip-0.18/t
+PerlIO-gzip-0.18/Changes
+PerlIO-gzip-0.18/MANIFEST
+PerlIO-gzip-0.18/gzip.xs
+PerlIO-gzip-0.18/Makefile.PL
+PerlIO-gzip-0.18/README
+PerlIO-gzip-0.18/META.yml
+PerlIO-gzip-0.18/t/ok19
+PerlIO-gzip-0.18/t/ok50.gz.short
+PerlIO-gzip-0.18/t/ok54.gz.len
+PerlIO-gzip-0.18/t/read.t
+PerlIO-gzip-0.18/t/write.t
+PerlIO-gzip-0.18/t/ok21
+PerlIO-gzip-0.18/t/ok17.gz
+PerlIO-gzip-0.18/t/ok3.gz
+PerlIO-gzip-0.18/t/ok58.gz.crc
+Entering PerlIO-gzip-0.18
+Checking configure dependencies from META.yml
+Configuring PerlIO-gzip-0.18 ... Running Makefile.PL
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for PerlIO::gzip
+OK
+Finding PREREQ from Makefile ...
+Building PerlIO-gzip-0.18 ... cp gzip.pm blib/lib/PerlIO/gzip.pm
+Running Mkbootstrap for PerlIO::gzip ()
+chmod 644 gzip.bs
+/usr/bin/perl /usr/lib/perl5/site_perl/5.8.8/ExtUtils/xsubpp  -typemap /usr/lib/perl5/5.8.8/ExtUtils/typemap  gzip.xs > gzip.xsc && mv gzip.xsc gzip.c
+gcc -c   -D_REENTRANT -D_GNU_SOURCE -fno-strict-aliasing -pipe -Wdeclaration-after-statement -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -I/usr/include/gdbm -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic   -DVERSION=\"0.18\" -DXS_VERSION=\"0.18\" -fPIC "-I/usr/lib64/perl5/5.8.8/x86_64-linux-thread-multi/CORE"   gzip.c
+gzip.c:1328: warning: ‘S_croak_xs_usage’ defined but not used
+gzip.xs: In function ‘PerlIOGzip_getarg’:
+gzip.xs:675: warning: ‘mode’ may be used uninitialized in this function
+rm -f blib/arch/auto/PerlIO/gzip/gzip.so
+LD_RUN_PATH="/lib64" gcc  -shared -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic gzip.o  -o blib/arch/auto/PerlIO/gzip/gzip.so 	\
+	   -lz  	\
+	  
+chmod 755 blib/arch/auto/PerlIO/gzip/gzip.so
+/usr/bin/perl -MExtUtils::Command::MM -e 'cp_nonempty' -- gzip.bs blib/arch/auto/PerlIO/gzip/gzip.bs 644
+Manifying blib/man3/PerlIO::gzip.3pm
+Running Mkbootstrap for PerlIO::gzip ()
+chmod 644 gzip.bs
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/x86_64-linux-thread-multi/auto/PerlIO/gzip/gzip.so
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/x86_64-linux-thread-multi/PerlIO/gzip.pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/PerlIO::gzip.3pm
+Appending installation info to /var/www/html/jbrowse1.11/extlib/lib/perl5/x86_64-linux-thread-multi/perllocal.pod
+OK
+Successfully installed PerlIO-gzip-0.18
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/x86_64-linux-thread-multi/.meta/PerlIO-gzip-0.18/install.json
+Searching File::Path on cpanmetadb ...
+--> Working on File::Path
+Fetching http://search.cpan.org/CPAN/authors/id/D/DL/DLAND/File-Path-2.09.tar.gz ... OK
+Unpacking File-Path-2.09.tar.gz
+File-Path-2.09/
+File-Path-2.09/Path.pm
+File-Path-2.09/t/
+File-Path-2.09/META.yml
+File-Path-2.09/Changes
+File-Path-2.09/MANIFEST
+File-Path-2.09/eg/
+File-Path-2.09/TODO
+File-Path-2.09/MANIFEST.SKIP
+File-Path-2.09/Makefile.PL
+File-Path-2.09/README
+File-Path-2.09/eg/setup-extra-tests
+File-Path-2.09/t/Path.t
+File-Path-2.09/t/taint.t
+File-Path-2.09/t/pod.t
+Entering File-Path-2.09
+Checking configure dependencies from META.yml
+Checking if you have ExtUtils::MakeMaker 0 ... Yes (6.86)
+Configuring File-Path-2.09 ... Running Makefile.PL
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for File::Path
+OK
+Finding PREREQ from Makefile ...
+Checking if you have File::Spec 0 ... Yes (3.33)
+Checking if you have File::Basename 0 ... Yes (2.74)
+Checking if you have Cwd 0 ... Yes (3.12)
+Checking if you have Carp 0 ... Yes (1.04)
+Building File-Path-2.09 ... cp Path.pm blib/lib/File/Path.pm
+Manifying blib/man3/File::Path.3pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/File/Path.pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/File::Path.3pm
+Appending installation info to /var/www/html/jbrowse1.11/extlib/lib/perl5/x86_64-linux-thread-multi/perllocal.pod
+OK
+Successfully installed File-Path-2.09 (upgraded from 1.08)
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/x86_64-linux-thread-multi/.meta/File-Path-2.09/install.json
+Searching Digest::Crc32 on cpanmetadb ...
+--> Working on Digest::Crc32
+Fetching http://search.cpan.org/CPAN/authors/id/F/FA/FAYS/Digest-Crc32-0.01.tar.gz ... OK
+Unpacking Digest-Crc32-0.01.tar.gz
+Digest-Crc32-001/
+Digest-Crc32-001/META.yml
+Digest-Crc32-001/Crc32.pm
+Digest-Crc32-001/Makefile.PL
+Digest-Crc32-001/README
+Digest-Crc32-001/MANIFEST
+Digest-Crc32-001/t/
+Digest-Crc32-001/t/use.t
+Entering Digest-Crc32-001
+Checking configure dependencies from META.yml
+Configuring Digest-Crc32-0.01 ... Running Makefile.PL
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Digest::Crc32
+OK
+Finding PREREQ from Makefile ...
+Building Digest-Crc32-0.01 ... cp Crc32.pm blib/lib/Digest/Crc32.pm
+Manifying blib/man3/Digest::Crc32.3pm
+Manifying blib/man3/Digest::Crc32.3pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/Digest/Crc32.pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/Digest::Crc32.3pm
+Appending installation info to /var/www/html/jbrowse1.11/extlib/lib/perl5/x86_64-linux-thread-multi/perllocal.pod
+OK
+Successfully installed Digest-Crc32-0.01
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/x86_64-linux-thread-multi/.meta/Digest-Crc32-0.01/install.json
+Searching Heap::Simple::XS on cpanmetadb ...
+--> Working on Heap::Simple::XS
+Fetching http://search.cpan.org/CPAN/authors/id/T/TH/THOSPEL/Heap-Simple-XS-0.10.tar.gz ... OK
+Unpacking Heap-Simple-XS-0.10.tar.gz
+Heap-Simple-XS-0.10/
+Heap-Simple-XS-0.10/Makefile.PL
+Heap-Simple-XS-0.10/ppport.h
+Heap-Simple-XS-0.10/Changes
+Heap-Simple-XS-0.10/README
+Heap-Simple-XS-0.10/t/
+Heap-Simple-XS-0.10/t/speed_priority
+Heap-Simple-XS-0.10/t/speed_binary
+Heap-Simple-XS-0.10/t/speed_array
+Heap-Simple-XS-0.10/t/speed_hash
+Heap-Simple-XS-0.10/t/speed_binomial
+Heap-Simple-XS-0.10/t/Ties.pm
+Heap-Simple-XS-0.10/t/speed_scalar
+Heap-Simple-XS-0.10/t/04_overload.t
+Heap-Simple-XS-0.10/t/02_stress.t
+Heap-Simple-XS-0.10/t/99_speed.t
+Heap-Simple-XS-0.10/t/FakeHeap.pm
+Heap-Simple-XS-0.10/t/03_magic.t
+Heap-Simple-XS-0.10/t/00_load.t
+Heap-Simple-XS-0.10/t/01_basic.t
+Heap-Simple-XS-0.10/t/speed_fibonacci
+Heap-Simple-XS-0.10/XS.xs
+Heap-Simple-XS-0.10/typemap
+Heap-Simple-XS-0.10/MANIFEST.SKIP
+Heap-Simple-XS-0.10/MANIFEST
+Heap-Simple-XS-0.10/META.yml
+Heap-Simple-XS-0.10/lib/
+Heap-Simple-XS-0.10/lib/Heap/
+Heap-Simple-XS-0.10/lib/Heap/Simple/
+Heap-Simple-XS-0.10/lib/Heap/Simple/XS/
+Heap-Simple-XS-0.10/lib/Heap/Simple/XS/Package.pm
+Heap-Simple-XS-0.10/lib/Heap/Simple/XS.pm
+Heap-Simple-XS-0.10/md5-versions
+Entering Heap-Simple-XS-0.10
+Checking configure dependencies from META.yml
+Configuring Heap-Simple-XS-0.10 ... Running Makefile.PL
+
+   Note that you can avoid these questions by passing
+   the '-n' or '-y' option to 'Makefile.PL'.
+
+Run Heap::Simple benchmarks during 'make test' ? [n] n
+Warning: prerequisite Heap::Simple 0.09 not found.
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Heap::Simple::XS
+OK
+Finding PREREQ from Makefile ...
+Checking if you have Test::More 0.11 ... Yes (0.62)
+Checking if you have Heap::Simple 0.09 ... No
+==> Found dependencies: Heap::Simple
+Searching Heap::Simple on cpanmetadb ...
+--> Working on Heap::Simple
+Fetching http://search.cpan.org/CPAN/authors/id/T/TH/THOSPEL/Heap-Simple-0.13.tar.gz ... OK
+Unpacking Heap-Simple-0.13.tar.gz
+Heap-Simple-0.13/
+Heap-Simple-0.13/Makefile.PL
+Heap-Simple-0.13/Changes
+Heap-Simple-0.13/README
+Heap-Simple-0.13/t/
+Heap-Simple-0.13/t/Heap-Simple.t
+Heap-Simple-0.13/MANIFEST.SKIP
+Heap-Simple-0.13/MANIFEST
+Heap-Simple-0.13/META.yml
+Heap-Simple-0.13/lib/
+Heap-Simple-0.13/lib/Heap/
+Heap-Simple-0.13/lib/Heap/Simple.pm
+Heap-Simple-0.13/lib/Heap/Simple/
+Heap-Simple-0.13/lib/Heap/Simple/Package.pm
+Heap-Simple-0.13/md5-versions
+Entering Heap-Simple-0.13
+Checking configure dependencies from META.yml
+Configuring Heap-Simple-0.13 ... Running Makefile.PL
+
+You seem to have neither 'Heap::Simple::XS' nor 'Heap::Simple::Perl' installed.
+That should not stop this package from getting installed (in fact, you'll need
+to install this package before you can install any of the other two).
+However, this package won't be usable until you install one (or both) of these
+two.
+
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Heap::Simple
+OK
+Finding PREREQ from Makefile ...
+Building Heap-Simple-0.13 ... cp lib/Heap/Simple/Package.pm blib/lib/Heap/Simple/Package.pm
+cp lib/Heap/Simple.pm blib/lib/Heap/Simple.pm
+Manifying blib/man3/Heap::Simple.3pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/Heap/Simple.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/Heap/Simple/Package.pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/Heap::Simple.3pm
+Appending installation info to /var/www/html/jbrowse1.11/extlib/lib/perl5/x86_64-linux-thread-multi/perllocal.pod
+OK
+Successfully installed Heap-Simple-0.13
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/x86_64-linux-thread-multi/.meta/Heap-Simple-0.13/install.json
+Building Heap-Simple-XS-0.10 ... cp lib/Heap/Simple/XS/Package.pm blib/lib/Heap/Simple/XS/Package.pm
+cp lib/Heap/Simple/XS.pm blib/lib/Heap/Simple/XS.pm
+Running Mkbootstrap for Heap::Simple::XS ()
+chmod 644 XS.bs
+/usr/bin/perl /usr/lib/perl5/site_perl/5.8.8/ExtUtils/xsubpp  -typemap /usr/lib/perl5/5.8.8/ExtUtils/typemap -typemap typemap  XS.xs > XS.xsc && mv XS.xsc XS.c
+gcc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fno-strict-aliasing -pipe -Wdeclaration-after-statement -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -I/usr/include/gdbm -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -DPERL_EXTMALLOC_DEF -Dmalloc=Perl_malloc -Dfree=Perl_mfree -Drealloc=Perl_realloc -Dcalloc=Perl_calloc -DVERSION=\"0.10\" -DXS_VERSION=\"0.10\" -fPIC "-I/usr/lib64/perl5/5.8.8/x86_64-linux-thread-multi/CORE"   XS.c
+XS.c: In function ‘XS_Heap__Simple__XS_merge_arrays’:
+XS.xs:2275: warning: ‘av’ may be used uninitialized in this function
+XS.xs: In function ‘key_insert’:
+XS.xs:438: warning: ‘t1’ may be used uninitialized in this function
+XS.xs:438: warning: ‘new’ may be used uninitialized in this function
+XS.c: In function ‘XS_Heap__Simple__XS__key_absorb’:
+XS.xs:1859: warning: ‘value’ may be used uninitialized in this function
+XS.xs:1859: warning: ‘key’ may be used uninitialized in this function
+XS.c: In function ‘XS_Heap__Simple__XS__absorb’:
+XS.xs:1648: warning: ‘value’ may be used uninitialized in this function
+rm -f blib/arch/auto/Heap/Simple/XS/XS.so
+gcc  -shared -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic XS.o  -o blib/arch/auto/Heap/Simple/XS/XS.so 	\
+	     	\
+	  
+chmod 755 blib/arch/auto/Heap/Simple/XS/XS.so
+/usr/bin/perl -MExtUtils::Command::MM -e 'cp_nonempty' -- XS.bs blib/arch/auto/Heap/Simple/XS/XS.bs 644
+Manifying blib/man3/Heap::Simple::XS.3pm
+Running Mkbootstrap for Heap::Simple::XS ()
+chmod 644 XS.bs
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/x86_64-linux-thread-multi/auto/Heap/Simple/XS/XS.so
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/x86_64-linux-thread-multi/Heap/Simple/XS.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/x86_64-linux-thread-multi/Heap/Simple/XS/Package.pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/Heap::Simple::XS.3pm
+Appending installation info to /var/www/html/jbrowse1.11/extlib/lib/perl5/x86_64-linux-thread-multi/perllocal.pod
+OK
+Successfully installed Heap-Simple-XS-0.10
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/x86_64-linux-thread-multi/.meta/Heap-Simple-XS-0.10/install.json
+Already tried Heap::Simple. Skipping.
+Searching Devel::Size on cpanmetadb ...
+--> Working on Devel::Size
+Fetching http://search.cpan.org/CPAN/authors/id/N/NW/NWCLARK/Devel-Size-0.79.tar.gz ... OK
+Unpacking Devel-Size-0.79.tar.gz
+Devel-Size-0.79/
+Devel-Size-0.79/CHANGES
+Devel-Size-0.79/MANIFEST
+Devel-Size-0.79/MANIFEST.SKIP
+Devel-Size-0.79/META.json
+Devel-Size-0.79/META.yml
+Devel-Size-0.79/Makefile.PL
+Devel-Size-0.79/README
+Devel-Size-0.79/Size.xs
+Devel-Size-0.79/lib/
+Devel-Size-0.79/ppport.h
+Devel-Size-0.79/t/
+Devel-Size-0.79/typemap
+Devel-Size-0.79/t/basic.t
+Devel-Size-0.79/t/code.t
+Devel-Size-0.79/t/globs.t
+Devel-Size-0.79/t/magic.t
+Devel-Size-0.79/t/pod.t
+Devel-Size-0.79/t/pod_cov.t
+Devel-Size-0.79/t/pvbm.t
+Devel-Size-0.79/t/recurse.t
+Devel-Size-0.79/t/warnings.t
+Devel-Size-0.79/lib/Devel/
+Devel-Size-0.79/lib/Devel/Size.pm
+Entering Devel-Size-0.79
+Checking configure dependencies from META.yml
+Checking if you have ExtUtils::MakeMaker 0 ... Yes (6.86)
+Configuring Devel-Size-0.79 ... Running Makefile.PL
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Devel::Size
+OK
+Finding PREREQ from Makefile ...
+Checking if you have Test::More 0 ... Yes (0.62)
+Checking if you have XSLoader 0 ... Yes (0.06)
+Building Devel-Size-0.79 ... cp lib/Devel/Size.pm blib/lib/Devel/Size.pm
+Running Mkbootstrap for Devel::Size ()
+chmod 644 Size.bs
+/usr/bin/perl /usr/lib/perl5/site_perl/5.8.8/ExtUtils/xsubpp  -typemap /usr/lib/perl5/5.8.8/ExtUtils/typemap -typemap typemap  Size.xs > Size.xsc && mv Size.xsc Size.c
+gcc -c   -D_REENTRANT -D_GNU_SOURCE -fno-strict-aliasing -pipe -Wdeclaration-after-statement -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -I/usr/include/gdbm -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic   -DVERSION=\"0.79\" -DXS_VERSION=\"0.79\" -fPIC "-I/usr/lib64/perl5/5.8.8/x86_64-linux-thread-multi/CORE"  -DALIGN_BITS=3 Size.c
+Size.xs: In function ‘check_new’:
+Size.xs:110: warning: unused variable ‘c’
+Size.c: In function ‘XS_Devel__Size_size’:
+Size.c:1017: warning: unused variable ‘Perl___notused’
+Size.c: In function ‘boot_Devel__Size’:
+Size.c:1056: warning: unused variable ‘Perl___notused’
+rm -f blib/arch/auto/Devel/Size/Size.so
+gcc  -shared -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic Size.o  -o blib/arch/auto/Devel/Size/Size.so 	\
+	     	\
+	  
+chmod 755 blib/arch/auto/Devel/Size/Size.so
+/usr/bin/perl -MExtUtils::Command::MM -e 'cp_nonempty' -- Size.bs blib/arch/auto/Devel/Size/Size.bs 644
+Manifying blib/man3/Devel::Size.3pm
+Running Mkbootstrap for Devel::Size ()
+chmod 644 Size.bs
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/x86_64-linux-thread-multi/auto/Devel/Size/Size.so
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/x86_64-linux-thread-multi/Devel/Size.pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/Devel::Size.3pm
+Appending installation info to /var/www/html/jbrowse1.11/extlib/lib/perl5/x86_64-linux-thread-multi/perllocal.pod
+OK
+Successfully installed Devel-Size-0.79
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/x86_64-linux-thread-multi/.meta/Devel-Size-0.79/install.json
+Searching Bio::GFF3::LowLevel::Parser on cpanmetadb ...
+--> Working on Bio::GFF3::LowLevel::Parser
+Fetching http://search.cpan.org/CPAN/authors/id/R/RB/RBUELS/Bio-GFF3-1.8.tar.gz ... OK
+Unpacking Bio-GFF3-1.8.tar.gz
+Bio-GFF3-1.8
+Bio-GFF3-1.8/README
+Bio-GFF3-1.8/Changes
+Bio-GFF3-1.8/LICENSE
+Bio-GFF3-1.8/dist.ini
+Bio-GFF3-1.8/META.yml
+Bio-GFF3-1.8/MANIFEST
+Bio-GFF3-1.8/META.json
+Bio-GFF3-1.8/t
+Bio-GFF3-1.8/t/parser.t
+Bio-GFF3-1.8/Makefile.PL
+Bio-GFF3-1.8/t/lowlevel.t
+Bio-GFF3-1.8/t/release-eol.t
+Bio-GFF3-1.8/t/data
+Bio-GFF3-1.8/t/data/tair10.gff3
+Bio-GFF3-1.8/bin
+Bio-GFF3-1.8/bin/gff3_from_fasta
+Bio-GFF3-1.8/t/data/hybrid2.gff3
+Bio-GFF3-1.8/t/data/hybrid1.gff3
+Bio-GFF3-1.8/t/data/knownGene.gff3
+Bio-GFF3-1.8/t/data/spec_eden.gff3
+Bio-GFF3-1.8/t/data/spec_match.gff3
+Bio-GFF3-1.8/t/data/knownGene2.gff3
+Bio-GFF3-1.8/t/data/directives.gff3
+Bio-GFF3-1.8/t/release-pod-syntax.t
+Bio-GFF3-1.8/t/data/tomato_test.gff3
+Bio-GFF3-1.8/t/data/quantitative.gff3
+Bio-GFF3-1.8/lib/Bio/GFF3
+Bio-GFF3-1.8/lib/Bio/GFF3/LowLevel.pm
+Bio-GFF3-1.8/t/release-pod-coverage.t
+Bio-GFF3-1.8/t/parser_1_0_backcompat.t
+Bio-GFF3-1.8/t/transforms
+Bio-GFF3-1.8/t/transforms/from_fasta.t
+Bio-GFF3-1.8/t/data/refGene_excerpt.gff3
+Bio-GFF3-1.8/t/data/gff3_with_syncs.gff3
+Bio-GFF3-1.8/t/data/tomato_chr4_head.gff3
+Bio-GFF3-1.8/t/transforms/syncdirectives.t
+Bio-GFF3-1.8/t/data/mm9_sample_ensembl.gff3
+Bio-GFF3-1.8/bin/gff3_insert_sync_directives
+Bio-GFF3-1.8/t/data/au9_scaffold_subset.gff3
+Bio-GFF3-1.8/lib/Bio/GFF3/LowLevel
+Bio-GFF3-1.8/lib/Bio/GFF3/LowLevel/Parser.pm
+Bio-GFF3-1.8/t/data/messy_protein_domains.gff3
+Bio-GFF3-1.8/t/data/knownGene_out_of_order.gff3
+Bio-GFF3-1.8/lib/Bio/GFF3/Transform
+Bio-GFF3-1.8/lib/Bio/GFF3/Transform/FromFasta.pm
+Bio-GFF3-1.8/t/data/gff3_with_syncs.dumped_result
+Bio-GFF3-1.8/lib/Bio/GFF3/Transform/SyncDirectives.pm
+Bio-GFF3-1.8/t/data/knownGene_out_of_order.dumped_result
+Bio-GFF3-1.8/lib/Bio/GFF3/LowLevel/Parser
+Bio-GFF3-1.8/lib/Bio/GFF3/LowLevel/Parser/1_0_backcompat.pm
+Entering Bio-GFF3-1.8
+Checking configure dependencies from META.yml
+Checking if you have ExtUtils::MakeMaker 6.30 ... Yes (6.86)
+Configuring Bio-GFF3-1.8 ... Running Makefile.PL
+Warning: prerequisite File::ReadBackwards 0 not found.
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Bio::GFF3
+OK
+Finding PREREQ from Makefile ...
+Checking if you have Scalar::Util 0 ... Yes (1.23)
+Checking if you have IO::Pipe 0 ... Yes (1.13)
+Checking if you have IO::Scalar 0 ... Yes (2.110)
+Checking if you have URI::Escape 0 ... Yes (3.31)
+Checking if you have Pod::Usage 0 ... Yes (1.33)
+Checking if you have IO::Handle 0 ... Yes (1.25)
+Checking if you have POSIX 0 ... Yes (1.09)
+Checking if you have File::Spec::Functions 0 ... Yes (3.33)
+Checking if you have List::MoreUtils 0 ... Yes (0.22)
+Checking if you have File::ReadBackwards 0 ... No
+Checking if you have File::Copy 0 ... Yes (2.09)
+Checking if you have base 0 ... Yes (2.07)
+Checking if you have warnings 0 ... Yes (1.05)
+Checking if you have IO::String 0 ... Yes (1.08)
+Checking if you have Getopt::Std 0 ... Yes (1.05)
+Checking if you have Exporter 0 ... Yes (5.58)
+Checking if you have Carp 0 ... Yes (1.04)
+Checking if you have strict 0 ... Yes (1.03)
+Checking if you have Test::More 0.88 ... No (0.62 < 0.88)
+Checking if you have File::Temp 0 ... Yes (0.22)
+==> Found dependencies: File::ReadBackwards, Test::More
+Searching File::ReadBackwards on cpanmetadb ...
+--> Working on File::ReadBackwards
+Fetching http://search.cpan.org/CPAN/authors/id/U/UR/URI/File-ReadBackwards-1.05.tar.gz ... OK
+Unpacking File-ReadBackwards-1.05.tar.gz
+File-ReadBackwards-1.05/
+File-ReadBackwards-1.05/t/
+File-ReadBackwards-1.05/t/bw.t
+File-ReadBackwards-1.05/t/large_file.t
+File-ReadBackwards-1.05/README
+File-ReadBackwards-1.05/ReadBackwards.pm
+File-ReadBackwards-1.05/MANIFEST
+File-ReadBackwards-1.05/META.yml
+File-ReadBackwards-1.05/Changes
+File-ReadBackwards-1.05/Makefile.PL
+Entering File-ReadBackwards-1.05
+Checking configure dependencies from META.yml
+Configuring File-ReadBackwards-1.05 ... Running Makefile.PL
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for File::ReadBackwards
+OK
+Finding PREREQ from Makefile ...
+Building File-ReadBackwards-1.05 ... cp ReadBackwards.pm blib/lib/File/ReadBackwards.pm
+Manifying blib/man3/File::ReadBackwards.3pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/File/ReadBackwards.pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/File::ReadBackwards.3pm
+Appending installation info to /var/www/html/jbrowse1.11/extlib/lib/perl5/x86_64-linux-thread-multi/perllocal.pod
+OK
+Successfully installed File-ReadBackwards-1.05
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/x86_64-linux-thread-multi/.meta/File-ReadBackwards-1.05/install.json
+Searching Test::More on cpanmetadb ...
+--> Working on Test::More
+Fetching http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/Test-Simple-1.001002.tar.gz ... OK
+Unpacking Test-Simple-1.001002.tar.gz
+Test-Simple-1.001002/
+Test-Simple-1.001002/.perlcriticrc
+Test-Simple-1.001002/.perltidyrc
+Test-Simple-1.001002/Changes
+Test-Simple-1.001002/examples/
+Test-Simple-1.001002/lib/
+Test-Simple-1.001002/Makefile.PL
+Test-Simple-1.001002/MANIFEST
+Test-Simple-1.001002/MANIFEST.SKIP
+Test-Simple-1.001002/META.json
+Test-Simple-1.001002/META.yml
+Test-Simple-1.001002/README
+Test-Simple-1.001002/t/
+Test-Simple-1.001002/TODO
+Test-Simple-1.001002/t/00compile.t
+Test-Simple-1.001002/t/00test_harness_check.t
+Test-Simple-1.001002/t/bad_plan.t
+Test-Simple-1.001002/t/bail_out.t
+Test-Simple-1.001002/t/BEGIN_require_ok.t
+Test-Simple-1.001002/t/BEGIN_use_ok.t
+Test-Simple-1.001002/t/buffer.t
+Test-Simple-1.001002/t/Builder/
+Test-Simple-1.001002/t/c_flag.t
+Test-Simple-1.001002/t/circular_data.t
+Test-Simple-1.001002/t/cmp_ok.t
+Test-Simple-1.001002/t/dependents.t
+Test-Simple-1.001002/t/diag.t
+Test-Simple-1.001002/t/died.t
+Test-Simple-1.001002/t/dont_overwrite_die_handler.t
+Test-Simple-1.001002/t/eq_set.t
+Test-Simple-1.001002/t/exit.t
+Test-Simple-1.001002/t/explain.t
+Test-Simple-1.001002/t/extra.t
+Test-Simple-1.001002/t/extra_one.t
+Test-Simple-1.001002/t/fail-like.t
+Test-Simple-1.001002/t/fail-more.t
+Test-Simple-1.001002/t/fail.t
+Test-Simple-1.001002/t/fail_one.t
+Test-Simple-1.001002/t/filehandles.t
+Test-Simple-1.001002/t/fork.t
+Test-Simple-1.001002/t/harness_active.t
+Test-Simple-1.001002/t/import.t
+Test-Simple-1.001002/t/is_deeply_dne_bug.t
+Test-Simple-1.001002/t/is_deeply_fail.t
+Test-Simple-1.001002/t/is_deeply_with_threads.t
+Test-Simple-1.001002/t/lib/
+Test-Simple-1.001002/t/missing.t
+Test-Simple-1.001002/t/More.t
+Test-Simple-1.001002/t/new_ok.t
+Test-Simple-1.001002/t/no_plan.t
+Test-Simple-1.001002/t/no_tests.t
+Test-Simple-1.001002/t/note.t
+Test-Simple-1.001002/t/overload.t
+Test-Simple-1.001002/t/overload_threads.t
+Test-Simple-1.001002/t/plan.t
+Test-Simple-1.001002/t/plan_bad.t
+Test-Simple-1.001002/t/plan_is_noplan.t
+Test-Simple-1.001002/t/plan_no_plan.t
+Test-Simple-1.001002/t/plan_shouldnt_import.t
+Test-Simple-1.001002/t/plan_skip_all.t
+Test-Simple-1.001002/t/pod-coverage.t
+Test-Simple-1.001002/t/pod.t
+Test-Simple-1.001002/t/require_ok.t
+Test-Simple-1.001002/t/Simple/
+Test-Simple-1.001002/t/simple.t
+Test-Simple-1.001002/t/skip.t
+Test-Simple-1.001002/t/skipall.t
+Test-Simple-1.001002/t/subtest/
+Test-Simple-1.001002/t/tbm_doesnt_set_exported_to.t
+Test-Simple-1.001002/t/Tester/
+Test-Simple-1.001002/t/thread_taint.t
+Test-Simple-1.001002/t/threads.t
+Test-Simple-1.001002/t/todo.t
+Test-Simple-1.001002/t/undef.t
+Test-Simple-1.001002/t/use_ok.t
+Test-Simple-1.001002/t/useing.t
+Test-Simple-1.001002/t/utf8.t
+Test-Simple-1.001002/t/versions.t
+Test-Simple-1.001002/t/xt/
+Test-Simple-1.001002/t/xt/dependents.t
+Test-Simple-1.001002/t/Tester/tbt_01basic.t
+Test-Simple-1.001002/t/Tester/tbt_02fhrestore.t
+Test-Simple-1.001002/t/Tester/tbt_03die.t
+Test-Simple-1.001002/t/Tester/tbt_04line_num.t
+Test-Simple-1.001002/t/Tester/tbt_05faildiag.t
+Test-Simple-1.001002/t/Tester/tbt_06errormess.t
+Test-Simple-1.001002/t/Tester/tbt_07args.t
+Test-Simple-1.001002/t/Tester/tbt_08subtest.t
+Test-Simple-1.001002/t/Tester/tbt_09do.t
+Test-Simple-1.001002/t/Tester/tbt_09do_script.pl
+Test-Simple-1.001002/t/subtest/args.t
+Test-Simple-1.001002/t/subtest/bail_out.t
+Test-Simple-1.001002/t/subtest/basic.t
+Test-Simple-1.001002/t/subtest/die.t
+Test-Simple-1.001002/t/subtest/do.t
+Test-Simple-1.001002/t/subtest/exceptions.t
+Test-Simple-1.001002/t/subtest/for_do_t.test
+Test-Simple-1.001002/t/subtest/fork.t
+Test-Simple-1.001002/t/subtest/implicit_done.t
+Test-Simple-1.001002/t/subtest/line_numbers.t
+Test-Simple-1.001002/t/subtest/plan.t
+Test-Simple-1.001002/t/subtest/predicate.t
+Test-Simple-1.001002/t/subtest/singleton.t
+Test-Simple-1.001002/t/subtest/threads.t
+Test-Simple-1.001002/t/subtest/todo.t
+Test-Simple-1.001002/t/subtest/wstat.t
+Test-Simple-1.001002/t/Simple/load.t
+Test-Simple-1.001002/t/lib/Dev/
+Test-Simple-1.001002/t/lib/Dummy.pm
+Test-Simple-1.001002/t/lib/MyOverload.pm
+Test-Simple-1.001002/t/lib/NoExporter.pm
+Test-Simple-1.001002/t/lib/SigDie.pm
+Test-Simple-1.001002/t/lib/Test/
+Test-Simple-1.001002/t/lib/TieOut.pm
+Test-Simple-1.001002/t/lib/Test/Builder/
+Test-Simple-1.001002/t/lib/Test/Simple/
+Test-Simple-1.001002/t/lib/Test/Simple/Catch.pm
+Test-Simple-1.001002/t/lib/Test/Simple/sample_tests/
+Test-Simple-1.001002/t/lib/Test/Simple/sample_tests/death.plx
+Test-Simple-1.001002/t/lib/Test/Simple/sample_tests/death_in_eval.plx
+Test-Simple-1.001002/t/lib/Test/Simple/sample_tests/death_with_handler.plx
+Test-Simple-1.001002/t/lib/Test/Simple/sample_tests/exit.plx
+Test-Simple-1.001002/t/lib/Test/Simple/sample_tests/extras.plx
+Test-Simple-1.001002/t/lib/Test/Simple/sample_tests/five_fail.plx
+Test-Simple-1.001002/t/lib/Test/Simple/sample_tests/last_minute_death.plx
+Test-Simple-1.001002/t/lib/Test/Simple/sample_tests/missing_done_testing.plx
+Test-Simple-1.001002/t/lib/Test/Simple/sample_tests/one_fail.plx
+Test-Simple-1.001002/t/lib/Test/Simple/sample_tests/one_fail_without_plan.plx
+Test-Simple-1.001002/t/lib/Test/Simple/sample_tests/pre_plan_death.plx
+Test-Simple-1.001002/t/lib/Test/Simple/sample_tests/require.plx
+Test-Simple-1.001002/t/lib/Test/Simple/sample_tests/success.plx
+Test-Simple-1.001002/t/lib/Test/Simple/sample_tests/too_few.plx
+Test-Simple-1.001002/t/lib/Test/Simple/sample_tests/too_few_fail.plx
+Test-Simple-1.001002/t/lib/Test/Simple/sample_tests/two_fail.plx
+Test-Simple-1.001002/t/lib/Test/Builder/NoOutput.pm
+Test-Simple-1.001002/t/lib/Dev/Null.pm
+Test-Simple-1.001002/t/Builder/Builder.t
+Test-Simple-1.001002/t/Builder/carp.t
+Test-Simple-1.001002/t/Builder/create.t
+Test-Simple-1.001002/t/Builder/current_test.t
+Test-Simple-1.001002/t/Builder/current_test_without_plan.t
+Test-Simple-1.001002/t/Builder/details.t
+Test-Simple-1.001002/t/Builder/done_testing.t
+Test-Simple-1.001002/t/Builder/done_testing_double.t
+Test-Simple-1.001002/t/Builder/done_testing_plan_mismatch.t
+Test-Simple-1.001002/t/Builder/done_testing_with_no_plan.t
+Test-Simple-1.001002/t/Builder/done_testing_with_number.t
+Test-Simple-1.001002/t/Builder/done_testing_with_plan.t
+Test-Simple-1.001002/t/Builder/fork_with_new_stdout.t
+Test-Simple-1.001002/t/Builder/has_plan.t
+Test-Simple-1.001002/t/Builder/has_plan2.t
+Test-Simple-1.001002/t/Builder/is_fh.t
+Test-Simple-1.001002/t/Builder/is_passing.t
+Test-Simple-1.001002/t/Builder/maybe_regex.t
+Test-Simple-1.001002/t/Builder/no_diag.t
+Test-Simple-1.001002/t/Builder/no_ending.t
+Test-Simple-1.001002/t/Builder/no_header.t
+Test-Simple-1.001002/t/Builder/no_plan_at_all.t
+Test-Simple-1.001002/t/Builder/ok_obj.t
+Test-Simple-1.001002/t/Builder/output.t
+Test-Simple-1.001002/t/Builder/reset.t
+Test-Simple-1.001002/t/Builder/reset_outputs.t
+Test-Simple-1.001002/t/Builder/try.t
+Test-Simple-1.001002/lib/Test/
+Test-Simple-1.001002/lib/Test/Builder/
+Test-Simple-1.001002/lib/Test/Builder.pm
+Test-Simple-1.001002/lib/Test/More.pm
+Test-Simple-1.001002/lib/Test/Simple.pm
+Test-Simple-1.001002/lib/Test/Tutorial.pod
+Test-Simple-1.001002/lib/Test/Builder/IO/
+Test-Simple-1.001002/lib/Test/Builder/Module.pm
+Test-Simple-1.001002/lib/Test/Builder/Tester/
+Test-Simple-1.001002/lib/Test/Builder/Tester.pm
+Test-Simple-1.001002/lib/Test/Builder/Tester/Color.pm
+Test-Simple-1.001002/lib/Test/Builder/IO/Scalar.pm
+Test-Simple-1.001002/examples/indent.pl
+Test-Simple-1.001002/examples/subtest.t
+Entering Test-Simple-1.001002
+Checking configure dependencies from META.yml
+Checking if you have ExtUtils::MakeMaker 0 ... Yes (6.86)
+Configuring Test-Simple-1.001002 ... Running Makefile.PL
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Test::Simple
+OK
+Finding PREREQ from Makefile ...
+Checking if you have Scalar::Util 1.13 ... Yes (1.23)
+Checking if you have Test::Harness 2.03 ... Yes (2.56)
+Building Test-Simple-1.001002 ... cp lib/Test/Builder/Tester/Color.pm blib/lib/Test/Builder/Tester/Color.pm
+cp lib/Test/Simple.pm blib/lib/Test/Simple.pm
+cp lib/Test/Builder.pm blib/lib/Test/Builder.pm
+cp lib/Test/Builder/IO/Scalar.pm blib/lib/Test/Builder/IO/Scalar.pm
+cp lib/Test/More.pm blib/lib/Test/More.pm
+cp lib/Test/Builder/Tester.pm blib/lib/Test/Builder/Tester.pm
+cp lib/Test/Builder/Module.pm blib/lib/Test/Builder/Module.pm
+cp lib/Test/Tutorial.pod blib/lib/Test/Tutorial.pod
+Manifying blib/man3/Test::Builder.3pm
+Manifying blib/man3/Test::Builder::IO::Scalar.3pm
+Manifying blib/man3/Test::Builder::Module.3pm
+Manifying blib/man3/Test::Builder::Tester.3pm
+Manifying blib/man3/Test::Builder::Tester::Color.3pm
+Manifying blib/man3/Test::More.3pm
+Manifying blib/man3/Test::Simple.3pm
+Manifying blib/man3/Test::Tutorial.3pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/Test/Simple.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/Test/Tutorial.pod
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/Test/Builder.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/Test/More.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/Test/Builder/Module.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/Test/Builder/Tester.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/Test/Builder/Tester/Color.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/Test/Builder/IO/Scalar.pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/Test::Builder::Module.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/Test::Tutorial.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/Test::Simple.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/Test::Builder::Tester.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/Test::Builder::Tester::Color.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/Test::Builder.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/Test::More.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/Test::Builder::IO::Scalar.3pm
+Appending installation info to /var/www/html/jbrowse1.11/extlib/lib/perl5/x86_64-linux-thread-multi/perllocal.pod
+OK
+Successfully installed Test-Simple-1.001002 (upgraded from 0.62)
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/x86_64-linux-thread-multi/.meta/Test-Simple-1.001002/install.json
+Building Bio-GFF3-1.8 ... cp lib/Bio/GFF3/Transform/SyncDirectives.pm blib/lib/Bio/GFF3/Transform/SyncDirectives.pm
+cp lib/Bio/GFF3/LowLevel/Parser/1_0_backcompat.pm blib/lib/Bio/GFF3/LowLevel/Parser/1_0_backcompat.pm
+cp lib/Bio/GFF3/LowLevel/Parser.pm blib/lib/Bio/GFF3/LowLevel/Parser.pm
+cp lib/Bio/GFF3/LowLevel.pm blib/lib/Bio/GFF3/LowLevel.pm
+cp lib/Bio/GFF3/Transform/FromFasta.pm blib/lib/Bio/GFF3/Transform/FromFasta.pm
+cp bin/gff3_insert_sync_directives blib/script/gff3_insert_sync_directives
+/usr/bin/perl -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/gff3_insert_sync_directives
+cp bin/gff3_from_fasta blib/script/gff3_from_fasta
+/usr/bin/perl -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/gff3_from_fasta
+bin/gff3_from_fasta:27: Unknown command paragraph "=encoding utf-8"
+bin/gff3_insert_sync_directives:35: Unknown command paragraph "=encoding utf-8"
+Manifying blib/man1/gff3_from_fasta.1
+Manifying blib/man1/gff3_insert_sync_directives.1
+lib/Bio/GFF3/LowLevel.pm:181: Unknown command paragraph "=encoding utf-8"
+lib/Bio/GFF3/LowLevel/Parser.pm:360: Unknown command paragraph "=encoding utf-8"
+lib/Bio/GFF3/LowLevel/Parser/1_0_backcompat.pm:72: Unknown command paragraph "=encoding utf-8"
+lib/Bio/GFF3/Transform/FromFasta.pm:104: Unknown command paragraph "=encoding utf-8"
+lib/Bio/GFF3/Transform/SyncDirectives.pm:70: Unknown command paragraph "=encoding utf-8"
+Manifying blib/man3/Bio::GFF3::LowLevel.3pm
+Manifying blib/man3/Bio::GFF3::LowLevel::Parser.3pm
+Manifying blib/man3/Bio::GFF3::LowLevel::Parser::1_0_backcompat.3pm
+Manifying blib/man3/Bio::GFF3::Transform::FromFasta.3pm
+Manifying blib/man3/Bio::GFF3::Transform::SyncDirectives.3pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/Bio/GFF3/LowLevel.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/Bio/GFF3/Transform/SyncDirectives.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/Bio/GFF3/Transform/FromFasta.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/Bio/GFF3/LowLevel/Parser.pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/Bio/GFF3/LowLevel/Parser/1_0_backcompat.pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man1/gff3_from_fasta.1
+Installing /var/www/html/jbrowse1.11/extlib/man/man1/gff3_insert_sync_directives.1
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/Bio::GFF3::Transform::SyncDirectives.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/Bio::GFF3::LowLevel::Parser::1_0_backcompat.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/Bio::GFF3::LowLevel.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/Bio::GFF3::LowLevel::Parser.3pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/Bio::GFF3::Transform::FromFasta.3pm
+Installing /var/www/html/jbrowse1.11/extlib/bin/gff3_insert_sync_directives
+Installing /var/www/html/jbrowse1.11/extlib/bin/gff3_from_fasta
+Appending installation info to /var/www/html/jbrowse1.11/extlib/lib/perl5/x86_64-linux-thread-multi/perllocal.pod
+OK
+Successfully installed Bio-GFF3-1.8
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/x86_64-linux-thread-multi/.meta/Bio-GFF3-1.8/install.json
+Searching File::Next on cpanmetadb ...
+--> Working on File::Next
+Fetching http://search.cpan.org/CPAN/authors/id/P/PE/PETDANCE/File-Next-1.12.tar.gz ... OK
+Unpacking File-Next-1.12.tar.gz
+File-Next-1.12/
+File-Next-1.12/perlcriticrc
+File-Next-1.12/MANIFEST
+File-Next-1.12/Makefile.PL
+File-Next-1.12/t/
+File-Next-1.12/t/everything.t
+File-Next-1.12/t/parms.t
+File-Next-1.12/t/pod-coverage.t
+File-Next-1.12/t/Util.pm
+File-Next-1.12/t/swamp/
+File-Next-1.12/t/swamp/perl.pm
+File-Next-1.12/t/swamp/parrot.pir
+File-Next-1.12/t/swamp/0
+File-Next-1.12/t/swamp/c-header.h
+File-Next-1.12/t/swamp/perl-without-extension
+File-Next-1.12/t/swamp/c/
+File-Next-1.12/t/swamp/c/c1
+File-Next-1.12/t/swamp/c/c2
+File-Next-1.12/t/swamp/Makefile
+File-Next-1.12/t/swamp/perl.pod
+File-Next-1.12/t/swamp/perl.pl
+File-Next-1.12/t/swamp/Makefile.PL
+File-Next-1.12/t/swamp/c-source.c
+File-Next-1.12/t/swamp/a/
+File-Next-1.12/t/swamp/a/a2
+File-Next-1.12/t/swamp/a/a1
+File-Next-1.12/t/swamp/perl-test.t
+File-Next-1.12/t/swamp/javascript.js
+File-Next-1.12/t/swamp/b/
+File-Next-1.12/t/swamp/b/b1
+File-Next-1.12/t/swamp/b/b2
+File-Next-1.12/t/stdin-iterator.pl
+File-Next-1.12/t/filelist-nul.txt
+File-Next-1.12/t/methods.t
+File-Next-1.12/t/00-load.t
+File-Next-1.12/t/from_stdin.t
+File-Next-1.12/t/api.t
+File-Next-1.12/t/first-and-last-lines-via-process-pipe.pl
+File-Next-1.12/t/basic.t
+File-Next-1.12/t/filelist.txt
+File-Next-1.12/t/from_file.t
+File-Next-1.12/t/dot.t
+File-Next-1.12/t/zero.t
+File-Next-1.12/t/follow.t
+File-Next-1.12/t/sort.t
+File-Next-1.12/t/dirs.t
+File-Next-1.12/t/named-pipe.t
+File-Next-1.12/t/pod.t
+File-Next-1.12/README.md
+File-Next-1.12/META.yml
+File-Next-1.12/META.json
+File-Next-1.12/Next.pm
+File-Next-1.12/Changes
+Entering File-Next-1.12
+Checking configure dependencies from META.yml
+Checking if you have ExtUtils::MakeMaker 0 ... Yes (6.86)
+Configuring File-Next-1.12 ... Running Makefile.PL
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for File::Next
+OK
+Finding PREREQ from Makefile ...
+Checking if you have Test::More 0.88 ... Yes (1.001002)
+Checking if you have File::Spec 0 ... Yes (3.33)
+Building File-Next-1.12 ... cp Next.pm blib/lib/File/Next.pm
+Manifying blib/man3/File::Next.3pm
+Manifying blib/man3/File::Next.3pm
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/File/Next.pm
+Installing /var/www/html/jbrowse1.11/extlib/man/man3/File::Next.3pm
+Appending installation info to /var/www/html/jbrowse1.11/extlib/lib/perl5/x86_64-linux-thread-multi/perllocal.pod
+OK
+Successfully installed File-Next-1.12
+Installing /var/www/html/jbrowse1.11/extlib/lib/perl5/x86_64-linux-thread-multi/.meta/File-Next-1.12/install.json
+<== Installed dependencies for .. Finishing.
+Expiring 3 work directories.
+11 distributions installed
++ bin/cpanm -v --notest -l extlib/ --installdeps .
+cpanm (App::cpanminus) 1.5007 on perl 5.008008 built for x86_64-linux-thread-multi
+Work directory is /home/rtyler/.cpanm/work/1389613707.6149
+You have make /usr/bin/make
+You have LWP 5.834
+You have /bin/tar: tar (GNU tar) 1.15.1
+You have /usr/bin/unzip
+Checking if you have ExtUtils::MakeMaker 6.31 ... Yes (6.86)
+Checking if you have ExtUtils::Install 1.46 ... Yes (1.54)
+--> Working on .
+Entering /var/www/html/jbrowse1.11
+Configuring /var/www/html/jbrowse1.11 ... Running Makefile.PL
+Generating a Unix-style Makefile
+Writing Makefile for JBrowse
+OK
+Finding PREREQ from Makefile ...
+Checking if you have Capture::Tiny 0 ... Yes (0.10)
+Checking if you have Pod::Usage 0 ... Yes (1.33)
+Checking if you have Storable 0 ... Yes (2.15)
+Checking if you have JSON::XS 0 ... Yes (2.24)
+Checking if you have PerlIO::gzip 0 ... Yes (0.18)
+Checking if you have List::Util 0 ... Yes (1.23)
+Checking if you have File::Path 2 ... Yes (2.09)
+Checking if you have Digest::Crc32 0 ... Yes (0.01)
+Checking if you have local::lib 0 ... Yes (1.008004)
+Checking if you have Bio::FeatureIO 0 ... Yes (undef)
+Checking if you have DBI 0 ... Yes (1.609)
+Checking if you have warnings 0 ... Yes (1.05)
+Checking if you have base 0 ... Yes (2.07)
+Checking if you have Getopt::Long 0 ... Yes (2.35)
+Checking if you have IO::File 0 ... Yes (1.13)
+Checking if you have Bio::Index::Fasta 0 ... Yes (undef)
+Checking if you have Data::Dumper 0 ... Yes (2.125)
+Checking if you have Bio::Root::Version 1.006000 ... Yes (1.006900)
+Checking if you have DB_File 0 ... Yes (1.814)
+Checking if you have vars 0 ... Yes (1.01)
+Checking if you have Bio::Annotation::SimpleValue 0 ... Yes (undef)
+Checking if you have Parse::RecDescent 0 ... Yes (1.94)
+Checking if you have strict 0 ... Yes (1.03)
+Checking if you have Test::More 0 ... Yes (1.001002)
+Checking if you have File::Temp 0 ... Yes (0.22)
+Checking if you have File::Copy::Recursive 0 ... Yes (0.38)
+Checking if you have Scalar::Util 0 ... Yes (1.23)
+Checking if you have DBD::SQLite 0 ... Yes (1.25)
+Checking if you have URI::Escape 0 ... Yes (3.31)
+Checking if you have FindBin 0 ... Yes (1.47)
+Checking if you have Heap::Simple::XS 0 ... Yes (0.10)
+Checking if you have Heap::Simple 0 ... Yes (0.13)
+Checking if you have Fcntl 0 ... Yes (1.05)
+Checking if you have File::Spec 0 ... Yes (3.33)
+Checking if you have POSIX 0 ... Yes (1.09)
+Checking if you have Devel::Size 0 ... Yes (0.79)
+Checking if you have File::Spec::Functions 0 ... Yes (3.33)
+Checking if you have Bio::SeqFeature::Lite 0 ... Yes (undef)
+Checking if you have Bio::GFF3::LowLevel::Parser 1.8 ... Yes (1.8)
+Checking if you have IO::Uncompress::Gunzip 0 ... Yes (2.030)
+Checking if you have Hash::Merge 0 ... Yes (0.11)
+Checking if you have constant 0 ... Yes (1.05)
+Checking if you have Exporter 0 ... Yes (5.58)
+Checking if you have Bio::OntologyIO 0 ... Yes (undef)
+Checking if you have Carp 0 ... Yes (1.04)
+Checking if you have Bio::SeqFeature::Annotated 0 ... Yes (undef)
+Checking if you have Test::Warn 0 ... Yes (0.21)
+Checking if you have File::Next 0 ... Yes (1.12)
+Checking if you have File::Basename 0 ... Yes (2.74)
+Checking if you have JSON 2 ... Yes (2.15)
+Checking if you have Cwd 0 ... Yes (3.12)
+<== Installed dependencies for .. Finishing.
++ set -e
++ bin/cpanm -v --notest -l extlib/ --installdeps .
+cpanm (App::cpanminus) 1.5007 on perl 5.008008 built for x86_64-linux-thread-multi
+Work directory is /home/rtyler/.cpanm/work/1389613707.6157
+You have make /usr/bin/make
+You have LWP 5.834
+You have /bin/tar: tar (GNU tar) 1.15.1
+You have /usr/bin/unzip
+Checking if you have ExtUtils::MakeMaker 6.31 ... Yes (6.86)
+Checking if you have ExtUtils::Install 1.46 ... Yes (1.54)
+--> Working on .
+Entering /var/www/html/jbrowse1.11
+Configuring /var/www/html/jbrowse1.11 ... Running Makefile.PL
+Generating a Unix-style Makefile
+Writing Makefile for JBrowse
+OK
+Finding PREREQ from Makefile ...
+Checking if you have Capture::Tiny 0 ... Yes (0.10)
+Checking if you have Pod::Usage 0 ... Yes (1.33)
+Checking if you have Storable 0 ... Yes (2.15)
+Checking if you have JSON::XS 0 ... Yes (2.24)
+Checking if you have PerlIO::gzip 0 ... Yes (0.18)
+Checking if you have List::Util 0 ... Yes (1.23)
+Checking if you have File::Path 2 ... Yes (2.09)
+Checking if you have Digest::Crc32 0 ... Yes (0.01)
+Checking if you have local::lib 0 ... Yes (1.008004)
+Checking if you have Bio::FeatureIO 0 ... Yes (undef)
+Checking if you have DBI 0 ... Yes (1.609)
+Checking if you have warnings 0 ... Yes (1.05)
+Checking if you have base 0 ... Yes (2.07)
+Checking if you have Getopt::Long 0 ... Yes (2.35)
+Checking if you have IO::File 0 ... Yes (1.13)
+Checking if you have Bio::Index::Fasta 0 ... Yes (undef)
+Checking if you have Data::Dumper 0 ... Yes (2.125)
+Checking if you have Bio::Root::Version 1.006000 ... Yes (1.006900)
+Checking if you have DB_File 0 ... Yes (1.814)
+Checking if you have vars 0 ... Yes (1.01)
+Checking if you have Bio::Annotation::SimpleValue 0 ... Yes (undef)
+Checking if you have Parse::RecDescent 0 ... Yes (1.94)
+Checking if you have strict 0 ... Yes (1.03)
+Checking if you have Test::More 0 ... Yes (1.001002)
+Checking if you have File::Temp 0 ... Yes (0.22)
+Checking if you have File::Copy::Recursive 0 ... Yes (0.38)
+Checking if you have Scalar::Util 0 ... Yes (1.23)
+Checking if you have DBD::SQLite 0 ... Yes (1.25)
+Checking if you have URI::Escape 0 ... Yes (3.31)
+Checking if you have FindBin 0 ... Yes (1.47)
+Checking if you have Heap::Simple::XS 0 ... Yes (0.10)
+Checking if you have Heap::Simple 0 ... Yes (0.13)
+Checking if you have Fcntl 0 ... Yes (1.05)
+Checking if you have File::Spec 0 ... Yes (3.33)
+Checking if you have POSIX 0 ... Yes (1.09)
+Checking if you have Devel::Size 0 ... Yes (0.79)
+Checking if you have File::Spec::Functions 0 ... Yes (3.33)
+Checking if you have Bio::SeqFeature::Lite 0 ... Yes (undef)
+Checking if you have Bio::GFF3::LowLevel::Parser 1.8 ... Yes (1.8)
+Checking if you have IO::Uncompress::Gunzip 0 ... Yes (2.030)
+Checking if you have Hash::Merge 0 ... Yes (0.11)
+Checking if you have constant 0 ... Yes (1.05)
+Checking if you have Exporter 0 ... Yes (5.58)
+Checking if you have Bio::OntologyIO 0 ... Yes (undef)
+Checking if you have Carp 0 ... Yes (1.04)
+Checking if you have Bio::SeqFeature::Annotated 0 ... Yes (undef)
+Checking if you have Test::Warn 0 ... Yes (0.21)
+Checking if you have File::Next 0 ... Yes (1.12)
+Checking if you have File::Basename 0 ... Yes (2.74)
+Checking if you have JSON 2 ... Yes (2.15)
+Checking if you have Cwd 0 ... Yes (3.12)
+<== Installed dependencies for .. Finishing.
++ rm -rf sample_data/json/volvox
++ bin/prepare-refseqs.pl --fasta docs/tutorial/data_files/volvox.fa --out sample_data/json/volvox
++ bin/biodb-to-json.pl -v --conf docs/tutorial/conf_files/volvox.json --out sample_data/json/volvox
+
+working on refseq ctgA
+working on track ExampleFeatures
+mergedTrackCfg: $VAR1 = {
+          'feature' => [
+                         'remark'
+                       ],
+          'autocomplete' => 'all',
+          'track' => 'ExampleFeatures',
+          'style' => {
+                       'className' => 'feature2'
+                     },
+          'compress' => 0,
+          'category' => 'Miscellaneous',
+          'key' => 'HTMLFeatures - Example Features'
+        };
+searching for features of type: remark
+working on track NameTest
+mergedTrackCfg: $VAR1 = {
+          'feature' => [
+                         'protein_coding_primary_transcript',
+                         'polypeptide'
+                       ],
+          'autocomplete' => 'all',
+          'track' => 'NameTest',
+          'style' => {
+                       'className' => 'feature2'
+                     },
+          'compress' => 0,
+          'category' => 'Miscellaneous',
+          'key' => 'HTMLFeatures - Name test track has a really long track label'
+        };
+searching for features of type: protein_coding_primary_transcript, polypeptide
+working on track snps
+mergedTrackCfg: $VAR1 = {
+          'feature' => [
+                         'SNP'
+                       ],
+          'autocomplete' => 'all',
+          'track' => 'snps',
+          'style' => {
+                       'className' => 'triangle hgred'
+                     },
+          'compress' => 0,
+          'category' => 'Miscellaneous',
+          'key' => 'HTMLFeatures - SNPs'
+        };
+searching for features of type: SNP
+working on track Motifs
+mergedTrackCfg: $VAR1 = {
+          'autocomplete' => 'all',
+          'track' => 'Motifs',
+          'style' => {
+                       'className' => 'feature3',
+                       'label' => 'function(feature) { return feature.get(\'Name\')+\' (via JS callback)\' }',
+                       'description' => 'function(feature) { return feature.get(\'Name\')+\': \'+feature.get(\'Note\'); }'
+                     },
+          'description' => 1,
+          'key' => 'HTMLFeatures - Example motifs',
+          'feature' => [
+                         'polypeptide_domain'
+                       ],
+          'compress' => 0,
+          'category' => 'Miscellaneous'
+        };
+searching for features of type: polypeptide_domain
+working on track malformed_alignments
+mergedTrackCfg: $VAR1 = {
+          'autocomplete' => 'all',
+          'track' => 'malformed_alignments',
+          'style' => {
+                       'className' => 'feature4'
+                     },
+          'menuTemplate' => [
+                              {
+                                'children' => [
+                                                {
+                                                  'children' => [
+                                                                  {
+                                                                    'iconClass' => 'dijitIconBookmark',
+                                                                    'url' => 'http://wiki.trin.org.au/{name}-{start}-{end}',
+                                                                    'action' => 'newWindow',
+                                                                    'label' => 'Query trin for {name}'
+                                                                  },
+                                                                  {
+                                                                    'iconClass' => 'dijitIconSearch',
+                                                                    'url' => 'http://example.com/{name}-{start}-{end}',
+                                                                    'label' => 'Query example.com for {name}'
+                                                                  }
+                                                                ],
+                                                  'label' => 'Check gene on databases'
+                                                },
+                                                {
+                                                  'label' => '2nd child of demo'
+                                                },
+                                                {
+                                                  'label' => '3rd child: this is a track'
+                                                }
+                                              ],
+                                'label' => 'Item with submenu'
+                              },
+                              {
+                                'iconClass' => 'dijitIconDatabase',
+                                'url' => 'http://www.example.com?featurename={name}',
+                                'action' => 'iframeDialog',
+                                'title' => 'The magnificent example.com (feature {name})',
+                                'label' => 'Open example.com in an iframe popup'
+                              },
+                              {
+                                'iconClass' => 'dijitIconDatabase',
+                                'url' => 'sample_data/test_snippet.html?featurename={name}:{start}-{end}',
+                                'action' => 'xhrDialog',
+                                'title' => 'function(track,feature,div) { return \'Random XHR HTML \'+Math.random()+\' title!\'; }',
+                                'label' => 'Open popup with XHR HTML snippet (btw this is feature {name})'
+                              },
+                              {
+                                'iconClass' => 'dijitIconDatabase',
+                                'content' => 'function(track,feature,div) { return \'<h2>\'+feature.get(\'name\')+\'</h2><p>This is some test content!</p><p>This message brought to you by the number <span style="font-size: 300%">\'+Math.round(Math.random()*100)+\'</span>.</p>\';} ',
+                                'action' => 'contentDialog',
+                                'title' => 'function(track,feature,div) { return \'Random content snippet \'+Math.random()+\' title!\'; }',
+                                'label' => 'Popup with content snippet from a function (feature {name})'
+                              },
+                              {
+                                'iconClass' => 'dijitIconDatabase',
+                                'content' => '<h2>{name}</h2><p>This is some test content about {name}, which goes from {start} to {end} on the {strand} strand.</p>',
+                                'action' => 'contentDialog',
+                                'title' => '{randomNumberTitle}',
+                                'label' => 'Popup with content snippet from string (feature {name})'
+                              },
+                              {
+                                'iconClass' => 'dijitIconDatabase',
+                                'action' => '{exampleFeatureClick}',
+                                'label' => '{randomNumberLabel}'
+                              }
+                            ],
+          'hooks' => {
+                       'modify' => 'function( track, feature, div ) { div.style.backgroundColor = [\'green\',\'blue\',\'red\',\'orange\',\'purple\'][Math.round(Math.random()*5)];}'
+                     },
+          'key' => 'HTMLFeatures - Features with right-click menus',
+          'feature' => [
+                         'match'
+                       ],
+          'compress' => 0,
+          'metadata' => {
+                          'category' => 'Miscellaneous',
+                          'Description' => 'Features with extensively customized right-click menus, and with their colors set at random by a JavaScript callback.'
+                        }
+        };
+searching for features of type: match
+working on track Genes
+mergedTrackCfg: $VAR1 = {
+          'autocomplete' => 'all',
+          'track' => 'Genes',
+          'style' => {
+                       'className' => 'feature5'
+                     },
+          'menuTemplate' => [
+                              {
+                                'iconClass' => 'dijitIconDatabase',
+                                'content' => '<h2>{name}</h2>This is some test content about {type} {name}, which goes from {start} to {end} on the {strand} strand.',
+                                'action' => 'contentDialog',
+                                'title' => '{randomNumberTitle}',
+                                'label' => 'Popup with content snippet from string (feature {name})'
+                              }
+                            ],
+          'key' => 'CanvasFeatures - Protein-coding genes',
+          'onClick' => 'http://www.ncbi.nlm.nih.gov/gquery/?term={name}',
+          'feature' => [
+                         'gene'
+                       ],
+          'trackType' => 'JBrowse/View/Track/CanvasFeatures',
+          'compress' => 0,
+          'category' => 'Transcripts'
+        };
+searching for features of type: gene
+working on track ReadingFrame
+mergedTrackCfg: $VAR1 = {
+          'autocomplete' => 'all',
+          'track' => 'ReadingFrame',
+          'style' => {
+                       'className' => 'cds'
+                     },
+          'key' => 'HTMLFeatures - mRNAs',
+          'onClick' => {
+                         'url' => 'http://www.ncbi.nlm.nih.gov/gquery/?term={name}',
+                         'label' => 'search at NCBI'
+                       },
+          'feature' => [
+                         'mRNA'
+                       ],
+          'phase' => 1,
+          'compress' => 0,
+          'category' => 'Transcripts'
+        };
+searching for features of type: mRNA
+working on track CDS
+mergedTrackCfg: $VAR1 = {
+          'autocomplete' => 'all',
+          'track' => 'CDS',
+          'style' => {
+                       'className' => 'cds',
+                       'linkTemplate' => 'http://www.ncbi.nlm.nih.gov/gquery/?term={name}-{start}-{end}'
+                     },
+          'key' => 'CanvasFeatures - mixed mRNAs and CDSs',
+          'feature' => [
+                         'CDS:bare_predicted',
+                         'mRNA:exonerate',
+                         'mRNA:predicted'
+                       ],
+          'trackType' => 'CanvasFeatures',
+          'compress' => 0,
+          'category' => 'Transcripts'
+        };
+searching for features of type: CDS:bare_predicted, mRNA:exonerate, mRNA:predicted
+working on track Transcript
+mergedTrackCfg: $VAR1 = {
+          'autocomplete' => 'all',
+          'track' => 'Transcript',
+          'style' => {
+                       'className' => 'feature',
+                       'color' => '#E32A3A'
+                     },
+          'description' => 1,
+          'key' => 'CanvasFeatures - transcripts',
+          'onClick' => '{exampleFeatureClick}',
+          'feature' => [
+                         'mRNA:exonerate'
+                       ],
+          'trackType' => 'JBrowse/View/Track/CanvasFeatures',
+          'compress' => 0,
+          'category' => 'Transcripts',
+          'subfeatures' => bless( do{\(my $o = 1)}, 'JSON::XS::Boolean' )
+        };
+searching for features of type: mRNA:exonerate
+working on track Clones
+mergedTrackCfg: $VAR1 = {
+          'autocomplete' => 'all',
+          'track' => 'Clones',
+          'style' => {
+                       'className' => 'exon'
+                     },
+          'description' => 1,
+          'key' => 'HTMLFeatures - Fingerprinted BACs',
+          'feature' => [
+                         'BAC'
+                       ],
+          'compress' => 0,
+          'category' => 'Miscellaneous'
+        };
+searching for features of type: BAC
+working on track EST
+mergedTrackCfg: $VAR1 = {
+          'feature' => [
+                         'EST_match:est'
+                       ],
+          'autocomplete' => 'all',
+          'track' => 'EST',
+          'style' => {
+                       'className' => 'est'
+                     },
+          'compress' => 0,
+          'category' => 'Miscellaneous',
+          'key' => 'HTMLFeatures - ESTs'
+        };
+searching for features of type: EST_match:est
+
+working on refseq ctgB
+working on track ExampleFeatures
+mergedTrackCfg: $VAR1 = {
+          'feature' => [
+                         'remark'
+                       ],
+          'autocomplete' => 'all',
+          'track' => 'ExampleFeatures',
+          'style' => {
+                       'className' => 'feature2'
+                     },
+          'compress' => 0,
+          'category' => 'Miscellaneous',
+          'key' => 'HTMLFeatures - Example Features'
+        };
+searching for features of type: remark
+working on track NameTest
+mergedTrackCfg: $VAR1 = {
+          'feature' => [
+                         'protein_coding_primary_transcript',
+                         'polypeptide'
+                       ],
+          'autocomplete' => 'all',
+          'track' => 'NameTest',
+          'style' => {
+                       'className' => 'feature2'
+                     },
+          'compress' => 0,
+          'category' => 'Miscellaneous',
+          'key' => 'HTMLFeatures - Name test track has a really long track label'
+        };
+searching for features of type: protein_coding_primary_transcript, polypeptide
+working on track snps
+mergedTrackCfg: $VAR1 = {
+          'feature' => [
+                         'SNP'
+                       ],
+          'autocomplete' => 'all',
+          'track' => 'snps',
+          'style' => {
+                       'className' => 'triangle hgred'
+                     },
+          'compress' => 0,
+          'category' => 'Miscellaneous',
+          'key' => 'HTMLFeatures - SNPs'
+        };
+searching for features of type: SNP
+working on track Motifs
+mergedTrackCfg: $VAR1 = {
+          'autocomplete' => 'all',
+          'track' => 'Motifs',
+          'style' => {
+                       'className' => 'feature3',
+                       'label' => 'function(feature) { return feature.get(\'Name\')+\' (via JS callback)\' }',
+                       'description' => 'function(feature) { return feature.get(\'Name\')+\': \'+feature.get(\'Note\'); }'
+                     },
+          'description' => 1,
+          'key' => 'HTMLFeatures - Example motifs',
+          'feature' => [
+                         'polypeptide_domain'
+                       ],
+          'compress' => 0,
+          'category' => 'Miscellaneous'
+        };
+searching for features of type: polypeptide_domain
+working on track malformed_alignments
+mergedTrackCfg: $VAR1 = {
+          'autocomplete' => 'all',
+          'track' => 'malformed_alignments',
+          'style' => {
+                       'className' => 'feature4'
+                     },
+          'menuTemplate' => [
+                              {
+                                'children' => [
+                                                {
+                                                  'children' => [
+                                                                  {
+                                                                    'iconClass' => 'dijitIconBookmark',
+                                                                    'url' => 'http://wiki.trin.org.au/{name}-{start}-{end}',
+                                                                    'action' => 'newWindow',
+                                                                    'label' => 'Query trin for {name}'
+                                                                  },
+                                                                  {
+                                                                    'iconClass' => 'dijitIconSearch',
+                                                                    'url' => 'http://example.com/{name}-{start}-{end}',
+                                                                    'label' => 'Query example.com for {name}'
+                                                                  }
+                                                                ],
+                                                  'label' => 'Check gene on databases'
+                                                },
+                                                {
+                                                  'label' => '2nd child of demo'
+                                                },
+                                                {
+                                                  'label' => '3rd child: this is a track'
+                                                }
+                                              ],
+                                'label' => 'Item with submenu'
+                              },
+                              {
+                                'iconClass' => 'dijitIconDatabase',
+                                'url' => 'http://www.example.com?featurename={name}',
+                                'action' => 'iframeDialog',
+                                'title' => 'The magnificent example.com (feature {name})',
+                                'label' => 'Open example.com in an iframe popup'
+                              },
+                              {
+                                'iconClass' => 'dijitIconDatabase',
+                                'url' => 'sample_data/test_snippet.html?featurename={name}:{start}-{end}',
+                                'action' => 'xhrDialog',
+                                'title' => 'function(track,feature,div) { return \'Random XHR HTML \'+Math.random()+\' title!\'; }',
+                                'label' => 'Open popup with XHR HTML snippet (btw this is feature {name})'
+                              },
+                              {
+                                'iconClass' => 'dijitIconDatabase',
+                                'content' => 'function(track,feature,div) { return \'<h2>\'+feature.get(\'name\')+\'</h2><p>This is some test content!</p><p>This message brought to you by the number <span style="font-size: 300%">\'+Math.round(Math.random()*100)+\'</span>.</p>\';} ',
+                                'action' => 'contentDialog',
+                                'title' => 'function(track,feature,div) { return \'Random content snippet \'+Math.random()+\' title!\'; }',
+                                'label' => 'Popup with content snippet from a function (feature {name})'
+                              },
+                              {
+                                'iconClass' => 'dijitIconDatabase',
+                                'content' => '<h2>{name}</h2><p>This is some test content about {name}, which goes from {start} to {end} on the {strand} strand.</p>',
+                                'action' => 'contentDialog',
+                                'title' => '{randomNumberTitle}',
+                                'label' => 'Popup with content snippet from string (feature {name})'
+                              },
+                              {
+                                'iconClass' => 'dijitIconDatabase',
+                                'action' => '{exampleFeatureClick}',
+                                'label' => '{randomNumberLabel}'
+                              }
+                            ],
+          'hooks' => {
+                       'modify' => 'function( track, feature, div ) { div.style.backgroundColor = [\'green\',\'blue\',\'red\',\'orange\',\'purple\'][Math.round(Math.random()*5)];}'
+                     },
+          'key' => 'HTMLFeatures - Features with right-click menus',
+          'feature' => [
+                         'match'
+                       ],
+          'compress' => 0,
+          'metadata' => {
+                          'category' => 'Miscellaneous',
+                          'Description' => 'Features with extensively customized right-click menus, and with their colors set at random by a JavaScript callback.'
+                        }
+        };
+searching for features of type: match
+working on track Genes
+mergedTrackCfg: $VAR1 = {
+          'autocomplete' => 'all',
+          'track' => 'Genes',
+          'style' => {
+                       'className' => 'feature5'
+                     },
+          'menuTemplate' => [
+                              {
+                                'iconClass' => 'dijitIconDatabase',
+                                'content' => '<h2>{name}</h2>This is some test content about {type} {name}, which goes from {start} to {end} on the {strand} strand.',
+                                'action' => 'contentDialog',
+                                'title' => '{randomNumberTitle}',
+                                'label' => 'Popup with content snippet from string (feature {name})'
+                              }
+                            ],
+          'key' => 'CanvasFeatures - Protein-coding genes',
+          'onClick' => 'http://www.ncbi.nlm.nih.gov/gquery/?term={name}',
+          'feature' => [
+                         'gene'
+                       ],
+          'trackType' => 'JBrowse/View/Track/CanvasFeatures',
+          'compress' => 0,
+          'category' => 'Transcripts'
+        };
+searching for features of type: gene
+working on track ReadingFrame
+mergedTrackCfg: $VAR1 = {
+          'autocomplete' => 'all',
+          'track' => 'ReadingFrame',
+          'style' => {
+                       'className' => 'cds'
+                     },
+          'key' => 'HTMLFeatures - mRNAs',
+          'onClick' => {
+                         'url' => 'http://www.ncbi.nlm.nih.gov/gquery/?term={name}',
+                         'label' => 'search at NCBI'
+                       },
+          'feature' => [
+                         'mRNA'
+                       ],
+          'phase' => 1,
+          'compress' => 0,
+          'category' => 'Transcripts'
+        };
+searching for features of type: mRNA
+working on track CDS
+mergedTrackCfg: $VAR1 = {
+          'autocomplete' => 'all',
+          'track' => 'CDS',
+          'style' => {
+                       'className' => 'cds',
+                       'linkTemplate' => 'http://www.ncbi.nlm.nih.gov/gquery/?term={name}-{start}-{end}'
+                     },
+          'key' => 'CanvasFeatures - mixed mRNAs and CDSs',
+          'feature' => [
+                         'CDS:bare_predicted',
+                         'mRNA:exonerate',
+                         'mRNA:predicted'
+                       ],
+          'trackType' => 'CanvasFeatures',
+          'compress' => 0,
+          'category' => 'Transcripts'
+        };
+searching for features of type: CDS:bare_predicted, mRNA:exonerate, mRNA:predicted
+working on track Transcript
+mergedTrackCfg: $VAR1 = {
+          'autocomplete' => 'all',
+          'track' => 'Transcript',
+          'style' => {
+                       'className' => 'feature',
+                       'color' => '#E32A3A'
+                     },
+          'description' => 1,
+          'key' => 'CanvasFeatures - transcripts',
+          'onClick' => '{exampleFeatureClick}',
+          'feature' => [
+                         'mRNA:exonerate'
+                       ],
+          'trackType' => 'JBrowse/View/Track/CanvasFeatures',
+          'compress' => 0,
+          'category' => 'Transcripts',
+          'subfeatures' => bless( do{\(my $o = 1)}, 'JSON::XS::Boolean' )
+        };
+searching for features of type: mRNA:exonerate
+working on track Clones
+mergedTrackCfg: $VAR1 = {
+          'autocomplete' => 'all',
+          'track' => 'Clones',
+          'style' => {
+                       'className' => 'exon'
+                     },
+          'description' => 1,
+          'key' => 'HTMLFeatures - Fingerprinted BACs',
+          'feature' => [
+                         'BAC'
+                       ],
+          'compress' => 0,
+          'category' => 'Miscellaneous'
+        };
+searching for features of type: BAC
+working on track EST
+mergedTrackCfg: $VAR1 = {
+          'feature' => [
+                         'EST_match:est'
+                       ],
+          'autocomplete' => 'all',
+          'track' => 'EST',
+          'style' => {
+                       'className' => 'est'
+                     },
+          'compress' => 0,
+          'category' => 'Miscellaneous',
+          'key' => 'HTMLFeatures - ESTs'
+        };
+searching for features of type: EST_match:est
++ cat docs/tutorial/data_files/volvox_microarray.bw.conf
++ cat docs/tutorial/data_files/volvox_sine.bw.conf
++ cat docs/tutorial/data_files/volvox-sorted.bam.conf
++ cat docs/tutorial/data_files/volvox-sorted.bam.coverage.conf
++ cat docs/tutorial/data_files/volvox.vcf.conf
++ cat docs/tutorial/data_files/volvox_fromconfig.conf
++ cat docs/tutorial/data_files/volvox.gff3.conf
++ bin/add-json.pl '{ "dataset_id": "volvox", "include": [ "../../raw/volvox/functions.conf" ] }' sample_data/json/volvox/trackList.json
++ bin/generate-names.pl --safeMode -v --out sample_data/json/volvox
+Tracks:
+    DNA
+    ExampleFeatures
+    NameTest
+    snps
+    Motifs
+    malformed_alignments
+    Genes
+    ReadingFrame
+    CDS
+    Transcript
+    Clones
+    EST
+Sampled input stats:
+                   avg record text bytes 56.9339622641509
+                      name input records 207
+        operation stream estimated count 844
+           record stream estimated count 211
+                     total namerec bytes 12070
+                       total input bytes 12038
+                         operations made 1034
+                       namerecs buffered 212
+        namerecs converted to operations 212
+Removing existing contents of target dir sample_data/json/volvox/names
+Hash store cache size: 2684 buckets
+Using 1 chars for sort log names (16 sort logs)
++ '[' -d sample_data/json/modencode ']'
++ mkdir -p sample_data/json/modencode/tracks
++ ln -sf ../../volvox/tracks/volvox_microarray.wig sample_data/json/modencode/tracks/volvox_microarray.wig
++ mkdir -p sample_data/raw
++ '[' '!' -e sample_data/raw/volvox ']'
++ ln -sf ../../docs/tutorial/conf_files/volvox.json sample_data/raw/
++ touch sample_data/json/volvox/successfully_run
++ rm -rf sample_data/json/yeast/
++ bin/prepare-refseqs.pl --fasta sample_data/raw/yeast_scaffolds/chr1.fa.gz --fasta sample_data/raw/yeast_scaffolds/chr2.fa.gzip --out sample_data/json/yeast/
++ bin/biodb-to-json.pl --conf sample_data/raw/yeast.json --out sample_data/json/yeast/
+
+working on refseq chrI
+working on track Genes
+working on track transcript_with_no_features
+
+working on refseq chrII
+working on track Genes
+working on track transcript_with_no_features
++ bin/add-json.pl '{ "dataset_id": "yeast" }' sample_data/json/yeast/trackList.json
++ bin/generate-names.pl --dir sample_data/json/yeast/
++ cd src/wig2png
++ ./configure
+checking for g++... g++
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for gcc... gcc
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether ln -s works... yes
+checking for library containing png_create_write_struct... -lpng
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking float.h usability... yes
+checking float.h presence... yes
+checking for float.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking png.h usability... yes
+checking png.h presence... yes
+checking for png.h... yes
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for pid_t... yes
+checking for C/C++ restrict keyword... __restrict
+checking for size_t... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for ptrdiff_t... yes
+checking vfork.h usability... no
+checking vfork.h presence... no
+checking for vfork.h... no
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking whether lstat correctly handles trailing slash... yes
+checking whether lstat accepts an empty string... no
+checking whether lstat correctly handles trailing slash... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible malloc... yes
+checking for strftime... yes
+checking for dup2... yes
+checking for floor... yes
+checking for memmove... yes
+checking for pow... yes
+checking for regcomp... yes
+checking for sqrt... yes
+checking for strchr... yes
+checking for strcspn... yes
+checking for strrchr... yes
+checking for strspn... yes
+checking for strstr... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/config.h
++ make
+g++ -g -O2 -include src/config.h -o ../../bin/wig2png src/wig2png.cc src/opts_list.cc  -lpng 
+/tmp/ccPNXyFY.o: In function `write_png_file(char const*, int, int, unsigned char**, png_color_struct*, int, int, bool)':
+/var/www/html/jbrowse1.11/src/wig2png/src/functions.c:38: undefined reference to `png_set_longjmp_fn'
+collect2: ld returned 1 exit status
+make: *** [../../bin/wig2png] Error 1
+Bio::DB::Sam already installed.
